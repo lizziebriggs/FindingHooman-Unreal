@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Year 3\\Term 1\\COMP_1288\\Unreal\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman\\FindingHooman.Build.cs",
+		"D:\\Year 3\\Term 1\\COMP_1288\\Unreal\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman.Target.cs",
+		"D:\\Year 3\\Term 1\\COMP_1288\\Unreal\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHoomanEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.1"
+}
