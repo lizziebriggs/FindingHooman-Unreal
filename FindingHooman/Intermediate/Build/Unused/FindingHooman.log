@@ -1,0 +1,18 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal).
+  Parsing headers for FindingHoomanEditor
+    Running UnrealHeaderTool "D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\FindingHooman.uproject" "D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHoomanEditor\Development\FindingHoomanEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Lizzie\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for FindingHoomanEditor in 4.0869108 seconds
+  Building FindingHoomanEditor...
+  Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 6 actions with 16 processes...
+    [1/6] FindingHooman.init.gen.cpp
+    [2/6] Doge.cpp
+    [3/6] Doge.gen.cpp
+    [4/6] UE4Editor-FindingHooman-0015.lib
+       Creating library D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman-0015.lib and object D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman-0015.exp
+    [5/6] UE4Editor-FindingHooman-0015.dll
+       Creating library D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman-0015.suppressed.lib and object D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman-0015.suppressed.exp
+    [6/6] FindingHoomanEditor.target
+  Total time in Parallel executor: 580.73 seconds
+  Total execution time: 585.78 seconds

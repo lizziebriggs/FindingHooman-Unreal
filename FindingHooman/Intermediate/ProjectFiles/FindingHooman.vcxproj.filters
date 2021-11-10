@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FindingHooman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{606ECC76-86BB-401F-87FA-93B7D4BB3EC5}</UniqueIdentifier>
+      <UniqueIdentifier>{96B37565-1392-45AC-9A81-19B4A7D85953}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CCCE5473-9C15-4500-8FB2-DD5BBBD9403B}</UniqueIdentifier>
+      <UniqueIdentifier>{0C1B9A95-1F9F-4EA5-9202-EFA9E1A0A416}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FindingHooman">
-      <UniqueIdentifier>{FE02511A-DB1D-47C3-9925-D1D80E629146}</UniqueIdentifier>
+      <UniqueIdentifier>{47552389-C2B1-4B54-9CD9-302A0E093811}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman\FindingHooman.Build.cs">
       <Filter>Source\FindingHooman</Filter>
@@ -52,6 +52,21 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\FindingHooman\FindingHoomanGameMode.h">
       <Filter>Source\FindingHooman</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\FindingHoomanGameModeBase.cpp">
+      <Filter>Source\FindingHooman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\FindingHoomanGameModeBase.h">
+      <Filter>Source\FindingHooman</Filter>
+    </ClInclude>
+    <Filter Include="Source\FindingHooman\Player">
+      <UniqueIdentifier>{1B0AC257-0BEB-4EF1-A3F3-42FFCDBA4C62}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FindingHooman\Player\Doge.cpp">
+      <Filter>Source\FindingHooman\Player</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\Player\Doge.h">
+      <Filter>Source\FindingHooman\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
