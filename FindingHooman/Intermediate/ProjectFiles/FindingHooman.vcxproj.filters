@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FindingHooman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{606ECC76-86BB-401F-87FA-93B7D4BB3EC5}</UniqueIdentifier>
+      <UniqueIdentifier>{9944D0D2-8174-404B-B5FD-AE7235D6E9FC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CCCE5473-9C15-4500-8FB2-DD5BBBD9403B}</UniqueIdentifier>
+      <UniqueIdentifier>{95176737-6B32-4B19-9F6E-544CA6BA0F6B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FindingHooman">
-      <UniqueIdentifier>{FE02511A-DB1D-47C3-9925-D1D80E629146}</UniqueIdentifier>
+      <UniqueIdentifier>{BE816327-C2A1-4D05-8646-5E577F775CED}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman\FindingHooman.Build.cs">
       <Filter>Source\FindingHooman</Filter>
@@ -52,6 +52,42 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\FindingHooman\FindingHoomanGameMode.h">
       <Filter>Source\FindingHooman</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\FindingHoomanGameModeBase.cpp">
+      <Filter>Source\FindingHooman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\FindingHoomanGameModeBase.h">
+      <Filter>Source\FindingHooman</Filter>
+    </ClInclude>
+    <Filter Include="Source\FindingHooman\DialogueSystem">
+      <UniqueIdentifier>{4254E2BF-416B-4858-96AE-7D537DFF5BFB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FindingHooman\DialogueSystem\DialogueAsset.cpp">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\DialogueSystem\DialogueAsset.h">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\DialogueSystem\DialogueManager.cpp">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\DialogueSystem\DialogueManager.h">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\DialogueSystem\DialogueTrigger.cpp">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\DialogueSystem\DialogueTrigger.h">
+      <Filter>Source\FindingHooman\DialogueSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\FindingHooman\Player">
+      <UniqueIdentifier>{E3E03232-D2F9-4463-8646-631A36DBF585}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FindingHooman\Player\Doge.cpp">
+      <Filter>Source\FindingHooman\Player</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\Player\Doge.h">
+      <Filter>Source\FindingHooman\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

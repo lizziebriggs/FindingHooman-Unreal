@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeFindingHooman_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x2F0DFE5E,
-				0xBF3D465E,
+				0xD07ABC86,
+				0x5F8A5668,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

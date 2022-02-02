@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "FindingHooman",
-			"Path": "D:\\Year 3\\Term 1\\COMP_1288\\Unreal\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman.Target.cs",
+			"Path": "D:\\Year 3\\Term 1\\COMP_1288\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "FindingHoomanEditor",
-			"Path": "D:\\Year 3\\Term 1\\COMP_1288\\Unreal\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHoomanEditor.Target.cs",
+			"Path": "D:\\Year 3\\Term 1\\COMP_1288\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHoomanEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
