@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FindingHooman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9944D0D2-8174-404B-B5FD-AE7235D6E9FC}</UniqueIdentifier>
+      <UniqueIdentifier>{EB09D92B-F16E-406C-A212-A1C934AA3EF1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{95176737-6B32-4B19-9F6E-544CA6BA0F6B}</UniqueIdentifier>
+      <UniqueIdentifier>{2039ABCE-9C15-429E-9129-74318D3FC3CB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FindingHooman">
-      <UniqueIdentifier>{BE816327-C2A1-4D05-8646-5E577F775CED}</UniqueIdentifier>
+      <UniqueIdentifier>{9365C0E2-A154-4240-ACAC-AF2F2E881DA0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman\FindingHooman.Build.cs">
       <Filter>Source\FindingHooman</Filter>
@@ -60,7 +60,7 @@
       <Filter>Source\FindingHooman</Filter>
     </ClInclude>
     <Filter Include="Source\FindingHooman\DialogueSystem">
-      <UniqueIdentifier>{4254E2BF-416B-4858-96AE-7D537DFF5BFB}</UniqueIdentifier>
+      <UniqueIdentifier>{8F732422-A28E-49AA-BE1D-2C0ED0588309}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\DialogueSystem\DialogueAsset.cpp">
       <Filter>Source\FindingHooman\DialogueSystem</Filter>
@@ -81,7 +81,7 @@
       <Filter>Source\FindingHooman\DialogueSystem</Filter>
     </ClInclude>
     <Filter Include="Source\FindingHooman\Player">
-      <UniqueIdentifier>{E3E03232-D2F9-4463-8646-631A36DBF585}</UniqueIdentifier>
+      <UniqueIdentifier>{942DDFA2-3055-40A4-AC6C-C7D4E1D6B932}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\Player\Doge.cpp">
       <Filter>Source\FindingHooman\Player</Filter>

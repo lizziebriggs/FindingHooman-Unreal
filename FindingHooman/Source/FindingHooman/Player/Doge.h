@@ -12,8 +12,6 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Blueprint/UserWidget.h"
-#include "FindingHooman/DialogueSystem/DialogueTrigger.h"
-#include "FindingHooman/DialogueSystem/DialogueManager.h"
 
 #include "Doge.generated.h"
 
@@ -45,8 +43,17 @@ public:
 	void ZoomCamera(float Axis);
 
 	// MOVEMENT
+	bool bIsRunning;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		float WalkSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		float RunSpeed;
+
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
+	void ToggleRun();
 
 	// INTERACTION
 	UFUNCTION()
@@ -60,6 +67,29 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = Interaction)
 		UBoxComponent* TriggerBox;
+
+	// SKILLS
+	void UnlockSkill(int);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanOpen;
+	void Open();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanPush;
+	void Push();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanBark;
+	void Bark();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanDig;
+	void Dig();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanSave;
+	void Save();
 
 protected:
 	// Called when the game starts or when spawned

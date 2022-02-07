@@ -133,10 +133,4 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/DialogueSystem/DialogueTrigger.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\DialogueSystem\DialogueAsset.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\DialogueAsset.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\DialogueTrigger.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/DialogueSystem/DialogueManager.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\DialogueManager.generated.h
 D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\Doge.generated.h
