@@ -3,15 +3,18 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 
+#include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "Blueprint/UserWidget.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
 
 #include "Doge.generated.h"
 
@@ -69,27 +72,42 @@ public:
 		UBoxComponent* TriggerBox;
 
 	// SKILLS
-	void UnlockSkill(int);
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		USphereComponent* SkillRadius;
+
+	UFUNCTION(BlueprintCallable)
+		void UnlockSkill(int skill);
+	UFUNCTION(BlueprintCallable)
+		void LockSkill(int skill);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Skills)
+		int currentSkill;
+
+	UFUNCTION(BlueprintCallable)
+		void SetSkill(int skill);
+
+	void SetSkillOpen() { currentSkill = 1; }
+	void SetSkillPush() { currentSkill = 2; }
+	void SetSkillBark() { currentSkill = 3; }
+	void SetSkillDig() { currentSkill = 4; }
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanOpen;
-	void Open();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanPush;
-	void Push();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanBark;
-	void Bark();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanDig;
-	void Dig();
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
-		bool bCanSave;
-	void Save();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Sounds)
+		USoundBase* barkSound;
+
+	UFUNCTION()
+		void OnOverlapSkillBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 protected:
 	// Called when the game starts or when spawned

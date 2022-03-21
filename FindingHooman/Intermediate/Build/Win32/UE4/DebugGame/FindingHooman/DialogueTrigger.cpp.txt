@@ -1,5 +1,0 @@
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win32\UE4\DebugGame\FindingHooman\Definitions.FindingHooman.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/DialogueSystem/DialogueTrigger.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\DialogueSystem\DialogueAsset.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win32\UE4\Inc\FindingHooman\DialogueAsset.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win32\UE4\Inc\FindingHooman\DialogueTrigger.generated.h
