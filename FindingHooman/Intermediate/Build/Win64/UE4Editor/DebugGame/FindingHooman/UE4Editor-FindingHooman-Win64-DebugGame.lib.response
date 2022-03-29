@@ -1,0 +1,37 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FindingHooman-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHoomanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\BarkInterface.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\InteractInterface.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\MiniGame.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockBark.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockDig.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockOpen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockPush.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\BirbActor.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\Doge.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHooman.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanCharacter.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanGameMode.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanGameModeBase.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\BarkInterface.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\BirbActor.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\Doge.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHooman.init.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanCharacter.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanGameMode.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\FindingHoomanGameModeBase.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\InteractInterface.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\MiniGame.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockBark.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockDig.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockOpen.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UnlockPush.gen.cpp.obj"
+"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\Default.rc2.res"
+/OUT:"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\DebugGame\FindingHooman\UE4Editor-FindingHooman-Win64-DebugGame.lib"

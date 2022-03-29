@@ -16,6 +16,11 @@ ADoge::ADoge()
 	TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &ADoge::OnOverlapBegin);
 	TriggerBox->OnComponentEndOverlap.AddDynamic(this, &ADoge::OnOverlapEnd);
 
+	SkillRadius = CreateDefaultSubobject<USphereComponent>(TEXT("SkillRadius"));
+	SkillRadius->SetCollisionProfileName(TEXT("Trigger"));
+	SkillRadius->SetupAttachment(RootComponent);
+	SkillRadius->OnComponentBeginOverlap.AddDynamic(this, &ADoge::OnOverlapSkillBegin);
+
 	// SETUP CAMERA
 
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -44,14 +49,15 @@ ADoge::ADoge()
 void ADoge::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	bIsRunning = false;
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 // Called every frame
 void ADoge::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
@@ -63,13 +69,19 @@ void ADoge::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Zoom", this, &ADoge::ZoomCamera);
 
+	PlayerInputComponent->BindAxis("MoveForward", this, &ADoge::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &ADoge::MoveRight);
+	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ADoge::ToggleRun);
+
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADoge::Interact);
 
-	PlayerInputComponent->BindAxis("MoveForward", this, &ADoge::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &ADoge::MoveRight);
+	PlayerInputComponent->BindAction("SetSkillOpen", IE_Pressed, this, &ADoge::SetSkillOpen);
+	PlayerInputComponent->BindAction("SetSkillPush", IE_Pressed, this, &ADoge::SetSkillPush);
+	PlayerInputComponent->BindAction("SetSkillBark", IE_Pressed, this, &ADoge::SetSkillBark);
+	PlayerInputComponent->BindAction("SetSkillDig", IE_Pressed, this, &ADoge::SetSkillDig);
 }
 
 void ADoge::ZoomCamera(float Axis)
@@ -87,12 +99,16 @@ void ADoge::ZoomCamera(float Axis)
 	}
 }
 
+
+// MOVEMENT
+
 void ADoge::MoveForward(float Axis)
 {
 	const FRotator Rotation = Controller->GetControlRotation();
 	const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+
 	AddMovementInput(Direction, Axis);
 }
 
@@ -102,8 +118,20 @@ void ADoge::MoveRight(float Axis)
 	const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+
 	AddMovementInput(Direction, Axis);
 }
+
+void ADoge::ToggleRun()
+{
+	bIsRunning = !bIsRunning;
+
+	if (bIsRunning) GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	else GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+}
+
+
+// INTERACTION
 
 void ADoge::Interact()
 {
@@ -118,11 +146,75 @@ void ADoge::Interact()
 	}
 }
 
+
+// SKILLS
+
+void ADoge::UnlockSkill(int i)
+{
+	switch (i)
+	{
+	case 1:
+		bCanOpen = true;
+		break;
+	case 2:
+		bCanPush = true;
+		break;
+	case 3:
+		bCanBark = true;
+		break;
+	case 4:
+		bCanDig = true;
+		break;
+
+	default:
+		break;
+	}
+}
+
+void ADoge::LockSkill(int i)
+{
+	switch (i)
+	{
+	case 1:
+		bCanOpen = false;
+		break;
+	case 2:
+		bCanPush = false;
+		break;
+	case 3:
+		bCanBark = false;
+		break;
+	case 4:
+		bCanDig = false;
+		break;
+
+	default:
+		break;
+	}
+}
+
+void ADoge::SetSkill(int skill)
+{
+	currentSkill = skill;
+}
+
+void ADoge::OnOverlapSkillBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor && (OtherActor != this) && OtherComp)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Overlap bark begin"));
+	}
+	
+}
+
+
+// COLLISIONS
+
 void ADoge::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Overlap begin"));
+		//UE_LOG(LogTemp, Warning, TEXT("Overlap begin"));
 		bCanInteract = true;
 	}
 }
@@ -131,7 +223,7 @@ void ADoge::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor
 {
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Overlap end"));
+		//UE_LOG(LogTemp, Warning, TEXT("Overlap end"));
 		bCanInteract = false;
 	}
 }

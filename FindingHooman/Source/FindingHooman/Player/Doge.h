@@ -3,17 +3,18 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 
+#include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "Blueprint/UserWidget.h"
-#include "FindingHooman/DialogueSystem/DialogueTrigger.h"
-#include "FindingHooman/DialogueSystem/DialogueManager.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
 
 #include "Doge.generated.h"
 
@@ -45,8 +46,17 @@ public:
 	void ZoomCamera(float Axis);
 
 	// MOVEMENT
+	bool bIsRunning;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		float WalkSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		float RunSpeed;
+
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
+	void ToggleRun();
 
 	// INTERACTION
 	UFUNCTION()
@@ -60,6 +70,44 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = Interaction)
 		UBoxComponent* TriggerBox;
+
+	// SKILLS
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		USphereComponent* SkillRadius;
+
+	UFUNCTION(BlueprintCallable)
+		void UnlockSkill(int skill);
+	UFUNCTION(BlueprintCallable)
+		void LockSkill(int skill);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Skills)
+		int currentSkill;
+
+	UFUNCTION(BlueprintCallable)
+		void SetSkill(int skill);
+
+	void SetSkillOpen() { currentSkill = 1; }
+	void SetSkillPush() { currentSkill = 2; }
+	void SetSkillBark() { currentSkill = 3; }
+	void SetSkillDig() { currentSkill = 4; }
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanOpen;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanPush;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanBark;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanDig;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Sounds)
+		USoundBase* barkSound;
+
+	UFUNCTION()
+		void OnOverlapSkillBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 protected:
 	// Called when the game starts or when spawned
