@@ -1,9 +1,9 @@
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Development\FindingHooman\Definitions.FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Development\FindingHooman\Definitions.FindingHooman.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/MiniGames/UnlockBark.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/MiniGames/MiniGame.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/Player/Doge.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/MiniGames/UnlockBark.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/MiniGames/MiniGame.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/Player/Doge.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\CharacterMovementReplication.generated.h
@@ -146,8 +146,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engi
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\GameplayStatics.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\Doge.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\MiniGame.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/NPCs/BirbActor.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\BirbActor.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\UnlockBark.generated.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\Doge.generated.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\MiniGame.generated.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/NPCs/BirbActor.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\BirbActor.generated.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\UnlockBark.generated.h

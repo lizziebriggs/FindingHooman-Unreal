@@ -1,9 +1,9 @@
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Development\FindingHooman\Definitions.FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Development\FindingHooman\Definitions.FindingHooman.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/FindingHoomanGameMode.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/FindingHoomanGameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\GameModeBase.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\FindingHoomanGameMode.generated.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\FindingHoomanGameMode.generated.h
