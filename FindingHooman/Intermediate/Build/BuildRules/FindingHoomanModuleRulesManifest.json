@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Uni\\FinalYear\\GameDev\\Term2\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman\\FindingHooman.Build.cs",
-		"D:\\Uni\\FinalYear\\GameDev\\Term2\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman.Target.cs",
-		"D:\\Uni\\FinalYear\\GameDev\\Term2\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHoomanEditor.Target.cs"
+		"F:\\Uni\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman\\FindingHooman.Build.cs",
+		"F:\\Uni\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHooman.Target.cs",
+		"F:\\Uni\\FindingHooman-Unreal\\FindingHooman\\Source\\FindingHoomanEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }
