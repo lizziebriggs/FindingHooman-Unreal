@@ -1,4 +1,3 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal).
   Target is up to date
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): warning MSB5021: Terminating the task executable "cmd" and its child processes because the build was canceled.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB4181: The "Exec" task returned false but did not log an error.
+  Total execution time: 0.62 seconds
