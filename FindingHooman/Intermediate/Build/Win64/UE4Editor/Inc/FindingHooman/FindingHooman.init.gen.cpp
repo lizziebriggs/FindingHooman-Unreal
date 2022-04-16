@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFindingHooman_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xBBBB066A,
+				0xC682A129,
 				0xAACCF065,
 				METADATA_PARAMS(nullptr, 0)
 			};

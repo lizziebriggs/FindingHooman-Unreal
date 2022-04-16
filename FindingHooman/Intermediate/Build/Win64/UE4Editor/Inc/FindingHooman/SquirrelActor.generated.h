@@ -8,23 +8,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FVector;
 #ifdef FINDINGHOOMAN_SquirrelActor_generated_h
 #error "SquirrelActor.generated.h already included, missing '#pragma once' in SquirrelActor.h"
 #endif
 #define FINDINGHOOMAN_SquirrelActor_generated_h
 
 #define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_SPARSE_DATA
-#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execThrowAcorn);
-
-
-#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execThrowAcorn);
-
-
+#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_RPC_WRAPPERS
+#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
 #define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASquirrelActor(); \
@@ -67,13 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASquirrelActor)
 
 
-#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__acornBP() { return STRUCT_OFFSET(ASquirrelActor, acornBP); } \
-	FORCEINLINE static uint32 __PPO__poolSize() { return STRUCT_OFFSET(ASquirrelActor, poolSize); } \
-	FORCEINLINE static uint32 __PPO__acornPool() { return STRUCT_OFFSET(ASquirrelActor, acornPool); } \
-	FORCEINLINE static uint32 __PPO__nextAcorn() { return STRUCT_OFFSET(ASquirrelActor, nextAcorn); }
-
-
+#define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_PRIVATE_PROPERTY_OFFSET
 #define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_9_PROLOG
 #define FindingHooman_Source_FindingHooman_HatMetagame_SquirrelActor_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

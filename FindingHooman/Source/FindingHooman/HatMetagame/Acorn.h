@@ -23,7 +23,4 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetActive(bool state);
 	bool isActive;
-	
-	UPROPERTY(BlueprintReadOnly)
-		UStaticMeshComponent* mesh;
 };

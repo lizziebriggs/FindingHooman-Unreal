@@ -17,7 +17,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, Category = AcornPool)
+	/*UPROPERTY(EditAnywhere, Category = AcornPool)
 		TSubclassOf<class AAcorn> acornBP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AcornPool)
@@ -30,7 +30,7 @@ protected:
 		int nextAcorn;
 
 	UFUNCTION(BlueprintCallable)
-		void ThrowAcorn(FVector spawnPos, FVector throwTo);
+		void ThrowAcorn(FVector spawnPos, FVector throwTo);*/
 
 public:	
 	virtual void Tick(float DeltaTime) override;

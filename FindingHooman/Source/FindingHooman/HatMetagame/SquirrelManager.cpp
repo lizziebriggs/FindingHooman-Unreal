@@ -38,6 +38,6 @@ void ASquirrelManager::ThrowAcorn(FVector spawnPos, FVector throwTo)
 
 	FVector throwVelocity = (throwTo - spawnPos).GetSafeNormal() * 1000;
 
-	if (acorn->mesh)
-		acorn->mesh->SetPhysicsLinearVelocity(throwVelocity);
+	/*if (acorn->mesh)
+		acorn->mesh->SetPhysicsLinearVelocity(throwVelocity);*/
 }

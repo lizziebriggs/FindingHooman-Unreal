@@ -3,9 +3,6 @@
 AAcorn::AAcorn()
 {
  	PrimaryActorTick.bCanEverTick = true;
-
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshCode"));
-	mesh->AttachTo(RootComponent);
 }
 
 void AAcorn::BeginPlay()
