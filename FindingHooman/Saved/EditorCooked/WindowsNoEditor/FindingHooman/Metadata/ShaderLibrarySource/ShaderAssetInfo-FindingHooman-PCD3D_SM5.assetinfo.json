@@ -2,33 +2,43 @@
 	"AssetInfoVersion": 2,
 	"ShaderCodeToAssets": [
 		{
-			"ShaderMapHash": "07A411D0410F6B9BBBFD3EDB44EC84532B6D7653",
-			"Assets": [
-				"/Engine/EditorMaterials/PersonaFloorMat"
-			]
-		},
-		{
-			"ShaderMapHash": "F66189E58E9591D49E1B9F27D4CB1FA726F7870E",
-			"Assets": [
-				"/Engine/EditorMaterials/GridMaterial"
-			]
-		},
-		{
 			"ShaderMapHash": "F285566D3D02017410C8A764D3DE38D75A6A1D96",
 			"Assets": [
 				"/Engine/EditorMaterials/LevelGridMaterial2"
 			]
 		},
 		{
-			"ShaderMapHash": "AF630D10EC29E174CC6981011633B94F1A86668B",
+			"ShaderMapHash": "6CB5CAC2EF8223107EA2B21906291F541215A3CF",
 			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Tree"
+				"/Game/Resources/Models/PlaceHolders/pots",
+				"/Game/Resources/Models/PlaceHolders/teaCups",
+				"/Game/Resources/Models/DogFinalModal3",
+				"/Game/Resources/Models/Cafe_transmission",
+				"/Game/Resources/Models/PlaceHolders/wallet3_material",
+				"/Game/Resources/Models/PlaceHolders/Wallet2_material",
+				"/Game/Resources/Models/PlaceHolders/Material_004",
+				"/Game/Resources/Models/PlaceHolders/Material_003",
+				"/Game/Resources/Models/PlaceHolders/Material_002",
+				"/Game/Resources/Models/PlaceHolders/Material",
+				"/Engine/EngineDebugMaterials/M_SimpleOpaque",
+				"/Engine/VREditor/TransformGizmo/Xray"
 			]
 		},
 		{
-			"ShaderMapHash": "A4BC21BDB19D9A2A7ACA48D6578362C6FF2248BE",
+			"ShaderMapHash": "7B48EFA7785D362B0DE4CE89C337822BE851F69E",
 			"Assets": [
-				"/Game/Resources/Models/DogFinalModal2"
+				"/Game/Resources/Models/Cafe",
+				"/Game/Resources/Models/TreeNarrow_Texture",
+				"/Game/Resources/Models/TreeLarge_Texture_2",
+				"/Game/Resources/Models/DogFinalModal1",
+				"/Game/Resources/Models/PlaceHolders/Wallet_material",
+				"/Game/Resources/Models/PlaceHolders/pendant_Material",
+				"/Game/Resources/Models/PlaceHolders/Material_001",
+				"/Game/Resources/Models/PlaceHolders/Mustard_Material",
+				"/Game/Resources/Models/PlaceHolders/Bun_Material",
+				"/Game/Resources/Models/PlaceHolders/Sausage_Material",
+				"/Game/Resources/Models/PlaceHolders/Frisbee_material",
+				"/OculusVR/Materials/TouchForQuestRiftSControllerMaterial"
 			]
 		},
 		{
@@ -41,6 +51,13 @@
 			"ShaderMapHash": "EE5C779A86755473406ED05E9E7490306F8F5F67",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Brick_Clay_Beveled"
+			]
+		},
+		{
+			"ShaderMapHash": "8A9408CE43B0D0686490250DD3514BEE33BFADC4",
+			"Assets": [
+				"/Game/Resources/Models/PlaceHolders/Poop_material",
+				"/Game/Resources/Models/PlaceHolders/DogBoneMaterial"
 			]
 		},
 		{
@@ -77,6 +94,30 @@
 			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Basic_Wall"
+			]
+		},
+		{
+			"ShaderMapHash": "5048FEB716118A4B001160EB20ACF8E9A3EAB71C",
+			"Assets": [
+				"/Game/Resources/Models/PlaceHolders/AcornHat_Material"
+			]
+		},
+		{
+			"ShaderMapHash": "3515B1041FB06FB07FB550CEA61AC6CFC771E5A4",
+			"Assets": [
+				"/Game/Resources/Models/PlaceHolders/Acorn_Material"
+			]
+		},
+		{
+			"ShaderMapHash": "A4BC21BDB19D9A2A7ACA48D6578362C6FF2248BE",
+			"Assets": [
+				"/Game/Resources/Models/DogFinalModal2"
+			]
+		},
+		{
+			"ShaderMapHash": "404BCC74169AB1E5D79193B91B9B8C7EAA05CB3B",
+			"Assets": [
+				"/Game/StarterContent/Materials/M_Ground_Moss"
 			]
 		},
 		{
@@ -369,12 +410,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "7B48EFA7785D362B0DE4CE89C337822BE851F69E",
-			"Assets": [
-				"/OculusVR/Materials/TouchForQuestRiftSControllerMaterial"
-			]
-		},
-		{
 			"ShaderMapHash": "70184CFFFB116A6DED3282DDC17BBBB75B712D41",
 			"Assets": [
 				"/OculusVR/Materials/touchController_mat"
@@ -655,13 +690,6 @@
 			"ShaderMapHash": "F54906C80055D636BC39802D22A7721B7F62D200",
 			"Assets": [
 				"/Engine/EditorMaterials/Thumbnails/SkySphereMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "6CB5CAC2EF8223107EA2B21906291F541215A3CF",
-			"Assets": [
-				"/Engine/EngineDebugMaterials/M_SimpleOpaque",
-				"/Engine/VREditor/TransformGizmo/Xray"
 			]
 		},
 		{
