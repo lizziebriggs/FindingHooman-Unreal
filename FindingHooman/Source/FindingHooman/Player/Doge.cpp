@@ -78,10 +78,10 @@ void ADoge::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADoge::Interact);
 
-	PlayerInputComponent->BindAction("SetSkillOpen", IE_Pressed, this, &ADoge::SetSkillOpen);
 	PlayerInputComponent->BindAction("SetSkillPush", IE_Pressed, this, &ADoge::SetSkillPush);
-	PlayerInputComponent->BindAction("SetSkillBark", IE_Pressed, this, &ADoge::SetSkillBark);
 	PlayerInputComponent->BindAction("SetSkillDig", IE_Pressed, this, &ADoge::SetSkillDig);
+	PlayerInputComponent->BindAction("SetSkillBark", IE_Pressed, this, &ADoge::SetSkillBark);
+	PlayerInputComponent->BindAction("SetSkillOpen", IE_Pressed, this, &ADoge::SetSkillOpen);
 }
 
 void ADoge::ZoomCamera(float Axis)
@@ -154,16 +154,16 @@ void ADoge::UnlockSkill(int i)
 	switch (i)
 	{
 	case 1:
-		bCanOpen = true;
+		bCanPush = true;
 		break;
 	case 2:
-		bCanPush = true;
+		bCanDig = true;
 		break;
 	case 3:
 		bCanBark = true;
 		break;
 	case 4:
-		bCanDig = true;
+		bCanOpen = true;
 		break;
 
 	default:
@@ -176,16 +176,16 @@ void ADoge::LockSkill(int i)
 	switch (i)
 	{
 	case 1:
-		bCanOpen = false;
+		bCanPush = true;
 		break;
 	case 2:
-		bCanPush = false;
+		bCanDig = true;
 		break;
 	case 3:
-		bCanBark = false;
+		bCanBark = true;
 		break;
 	case 4:
-		bCanDig = false;
+		bCanOpen = true;
 		break;
 
 	default:

@@ -86,22 +86,22 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetSkill(int skill);
 
-	void SetSkillOpen() { currentSkill = 1; }
-	void SetSkillPush() { currentSkill = 2; }
+	void SetSkillPush() { currentSkill = 1; }
+	void SetSkillDig() { currentSkill = 2; }
 	void SetSkillBark() { currentSkill = 3; }
-	void SetSkillDig() { currentSkill = 4; }
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
-		bool bCanOpen;
+	void SetSkillOpen() { currentSkill = 4; }
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanPush;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
+		bool bCanDig;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
 		bool bCanBark;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Skills)
-		bool bCanDig;
+		bool bCanOpen;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Sounds)
 		USoundBase* barkSound;
