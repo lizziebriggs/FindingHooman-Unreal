@@ -49,10 +49,13 @@ public:
 	bool bIsRunning;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
-		float WalkSpeed;
+		float normalWalkSpeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
-		float RunSpeed;
+		float normalRunSpeed;
+
+	float WalkSpeed;
+	float RunSpeed;
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
@@ -108,6 +111,33 @@ public:
 
 	UFUNCTION()
 		void OnOverlapSkillBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	// HAT ABILITIES
+
+	UFUNCTION(BlueprintCallable)
+		void RevertAbilities();
+
+	UFUNCTION(BlueprintCallable)
+		void WearPropellerHat();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Hats)
+		float jumpBoost;
+
+	UFUNCTION(BlueprintCallable)
+		void WearGooseHat();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Hats)
+		USoundBase* gooseSound;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Hats)
+		bool isGoose;
+
+	UFUNCTION(BlueprintCallable)
+		void WearAcornHat();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Hats)
+		bool squirrelsFollow;
+
+	UFUNCTION(BlueprintCallable)
+		void WearBunnyHat();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Hats)
+		float speedBoost;
 
 protected:
 	// Called when the game starts or when spawned

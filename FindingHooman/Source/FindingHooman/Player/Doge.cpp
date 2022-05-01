@@ -50,6 +50,9 @@ void ADoge::BeginPlay()
 {
 	Super::BeginPlay();
 
+	WalkSpeed = normalWalkSpeed;
+	RunSpeed = normalRunSpeed;
+
 	bIsRunning = false;
 	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
@@ -205,6 +208,51 @@ void ADoge::OnOverlapSkillBegin(UPrimitiveComponent* OverlappedComp, AActor* Oth
 		//UE_LOG(LogTemp, Warning, TEXT("Overlap bark begin"));
 	}
 	
+}
+
+
+// HAT ABILITIES
+
+void ADoge::RevertAbilities()
+{
+	GetCharacterMovement()->JumpZVelocity = 450.0f;
+	
+	isGoose = false;
+
+	squirrelsFollow = false;
+
+	WalkSpeed = normalWalkSpeed;
+	RunSpeed = normalRunSpeed;
+	if (bIsRunning) GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	else GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+}
+
+void ADoge::WearPropellerHat()
+{
+	RevertAbilities();
+	GetCharacterMovement()->JumpZVelocity *= jumpBoost;
+}
+
+void ADoge::WearGooseHat()
+{
+	RevertAbilities();
+	isGoose = true;
+}
+
+void ADoge::WearAcornHat()
+{
+	RevertAbilities();
+	squirrelsFollow = true;
+}
+
+void ADoge::WearBunnyHat()
+{
+	RevertAbilities();
+	WalkSpeed *= speedBoost;
+	RunSpeed *= speedBoost;
+
+	if (bIsRunning) GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	else GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 

@@ -19,6 +19,11 @@ struct FHitResult;
 #define FindingHooman_Source_FindingHooman_Player_Doge_h_24_SPARSE_DATA
 #define FindingHooman_Source_FindingHooman_Player_Doge_h_24_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execWearBunnyHat); \
+	DECLARE_FUNCTION(execWearAcornHat); \
+	DECLARE_FUNCTION(execWearGooseHat); \
+	DECLARE_FUNCTION(execWearPropellerHat); \
+	DECLARE_FUNCTION(execRevertAbilities); \
 	DECLARE_FUNCTION(execOnOverlapSkillBegin); \
 	DECLARE_FUNCTION(execSetSkill); \
 	DECLARE_FUNCTION(execLockSkill); \
@@ -29,6 +34,11 @@ struct FHitResult;
 
 #define FindingHooman_Source_FindingHooman_Player_Doge_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execWearBunnyHat); \
+	DECLARE_FUNCTION(execWearAcornHat); \
+	DECLARE_FUNCTION(execWearGooseHat); \
+	DECLARE_FUNCTION(execWearPropellerHat); \
+	DECLARE_FUNCTION(execRevertAbilities); \
 	DECLARE_FUNCTION(execOnOverlapSkillBegin); \
 	DECLARE_FUNCTION(execSetSkill); \
 	DECLARE_FUNCTION(execLockSkill); \
