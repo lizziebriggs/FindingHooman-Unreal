@@ -1,2 +1,2 @@
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\Definitions.FindingHooman.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\Definitions.FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\FindingHooman.h
