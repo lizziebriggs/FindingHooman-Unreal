@@ -39,6 +39,15 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bonesCollected_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_bonesCollected;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_goalTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_goalTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_infinite_MetaData[];
+#endif
+		static void NewProp_infinite_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_infinite;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -67,9 +76,29 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected = { "bonesCollected", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, bonesCollected), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData[] = {
+		{ "Category", "MiniGameSettings" },
+		{ "ModuleRelativePath", "MiniGames/UnlockDig.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime = { "goalTime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, goalTime), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite_MetaData[] = {
+		{ "Category", "MiniGameSettings" },
+		{ "ModuleRelativePath", "MiniGames/UnlockDig.h" },
+	};
+#endif
+	void Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite_SetBit(void* Obj)
+	{
+		((AUnlockDig*)Obj)->infinite = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite = { "infinite", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AUnlockDig), &Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite_SetBit, METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUnlockDig_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_infinite,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUnlockDig_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUnlockDig>::IsAbstract,
@@ -98,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUnlockDig, 4210214585);
+	IMPLEMENT_CLASS(AUnlockDig, 2521531087);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<AUnlockDig>()
 	{
 		return AUnlockDig::StaticClass();

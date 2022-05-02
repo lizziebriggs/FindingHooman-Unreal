@@ -68,8 +68,10 @@ void ADoge::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("Turn", this, &ADoge::TurnCamera);
+	//PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &ADoge::LookUp);
+	//PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Zoom", this, &ADoge::ZoomCamera);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ADoge::MoveForward);
@@ -102,6 +104,30 @@ void ADoge::ZoomCamera(float Axis)
 	}
 }
 
+void ADoge::TurnCamera(float Val)
+{
+	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
+	{
+		APlayerController* const PC = CastChecked<APlayerController>(Controller);
+
+		if (InvertCamera)
+			PC->AddYawInput(-Val * MouseSensitivity);
+		else PC->AddYawInput(Val * MouseSensitivity);
+	}
+}
+
+void ADoge::LookUp(float Val)
+{
+	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
+	{
+		APlayerController* const PC = CastChecked<APlayerController>(Controller);
+
+		if (InvertCamera)
+			PC->AddPitchInput(-Val * MouseSensitivity);
+		else PC->AddPitchInput(Val * MouseSensitivity);
+	}
+}
+
 
 // MOVEMENT
 
@@ -112,7 +138,9 @@ void ADoge::MoveForward(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
-	AddMovementInput(Direction, Axis);
+	if (InvertMovement)
+		AddMovementInput(-Direction, Axis);
+	else AddMovementInput(Direction, Axis);
 }
 
 void ADoge::MoveRight(float Axis)
@@ -122,7 +150,9 @@ void ADoge::MoveRight(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
-	AddMovementInput(Direction, Axis);
+	if (InvertMovement)
+		AddMovementInput(-Direction, Axis);
+	else AddMovementInput(Direction, Axis);
 }
 
 void ADoge::ToggleRun()

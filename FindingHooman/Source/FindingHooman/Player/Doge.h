@@ -45,6 +45,18 @@ public:
 
 	void ZoomCamera(float Axis);
 
+	void TurnCamera(float Val);
+	void LookUp(float Val);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		bool InvertCamera;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		bool InvertMovement;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+		float MouseSensitivity;
+
 	// MOVEMENT
 	bool bIsRunning;
 
