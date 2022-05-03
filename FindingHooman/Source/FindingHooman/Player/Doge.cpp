@@ -110,9 +110,9 @@ void ADoge::TurnCamera(float Val)
 	{
 		APlayerController* const PC = CastChecked<APlayerController>(Controller);
 
-		if (InvertCamera)
-			PC->AddYawInput(-Val * MouseSensitivity);
-		else PC->AddYawInput(Val * MouseSensitivity);
+		if (InvertCameraHori)
+			PC->AddYawInput(-Val * MouseSensitivityHori);
+		else PC->AddYawInput(Val * MouseSensitivityHori);
 	}
 }
 
@@ -122,9 +122,9 @@ void ADoge::LookUp(float Val)
 	{
 		APlayerController* const PC = CastChecked<APlayerController>(Controller);
 
-		if (InvertCamera)
-			PC->AddPitchInput(-Val * MouseSensitivity);
-		else PC->AddPitchInput(Val * MouseSensitivity);
+		if (InvertCameraVert)
+			PC->AddPitchInput(-Val * MouseSensitivityVert);
+		else PC->AddPitchInput(Val * MouseSensitivityVert);
 	}
 }
 
@@ -138,7 +138,7 @@ void ADoge::MoveForward(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
-	if (InvertMovement)
+	if (InvertMovementVert)
 		AddMovementInput(-Direction, Axis);
 	else AddMovementInput(Direction, Axis);
 }
@@ -150,7 +150,7 @@ void ADoge::MoveRight(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
-	if (InvertMovement)
+	if (InvertMovementHori)
 		AddMovementInput(-Direction, Axis);
 	else AddMovementInput(Direction, Axis);
 }
@@ -209,16 +209,16 @@ void ADoge::LockSkill(int i)
 	switch (i)
 	{
 	case 1:
-		bCanPush = true;
+		bCanPush = false;
 		break;
 	case 2:
-		bCanDig = true;
+		bCanDig = false;
 		break;
 	case 3:
-		bCanBark = true;
+		bCanBark = false;
 		break;
 	case 4:
-		bCanOpen = true;
+		bCanOpen = false;
 		break;
 
 	default:

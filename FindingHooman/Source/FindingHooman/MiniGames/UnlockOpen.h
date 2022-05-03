@@ -13,11 +13,20 @@ class FINDINGHOOMAN_API AUnlockOpen : public AMiniGame
 public:
 	AUnlockOpen();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
 		int scoreToWin;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
-		int valueScore;
+		int valueScore;*/
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasMirror;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasBracelet;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasPearlCollar;
 
 protected:
 	virtual void BeginPlay() override;

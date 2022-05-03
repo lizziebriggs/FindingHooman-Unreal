@@ -32,13 +32,20 @@ void EmptyLinkFunctionForGeneratedCodeUnlockOpen() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_scoreToWin_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hasMirror_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_scoreToWin;
+		static void NewProp_hasMirror_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_hasMirror;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_valueScore_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hasBracelet_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_valueScore;
+		static void NewProp_hasBracelet_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_hasBracelet;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hasPearlCollar_MetaData[];
+#endif
+		static void NewProp_hasPearlCollar_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_hasPearlCollar;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -54,22 +61,44 @@ void EmptyLinkFunctionForGeneratedCodeUnlockOpen() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockOpen_Statics::NewProp_scoreToWin_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror_MetaData[] = {
 		{ "Category", "MiniGameSettings" },
+		{ "Comment", "/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)\n\x09\x09int scoreToWin;\n\n\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)\n\x09\x09int valueScore;*/" },
 		{ "ModuleRelativePath", "MiniGames/UnlockOpen.h" },
+		{ "ToolTip", "UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)\n               int scoreToWin;\n\n       UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)\n               int valueScore;" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockOpen_Statics::NewProp_scoreToWin = { "scoreToWin", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockOpen, scoreToWin), METADATA_PARAMS(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_scoreToWin_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_scoreToWin_MetaData)) };
+	void Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror_SetBit(void* Obj)
+	{
+		((AUnlockOpen*)Obj)->hasMirror = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror = { "hasMirror", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AUnlockOpen), &Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror_SetBit, METADATA_PARAMS(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockOpen_Statics::NewProp_valueScore_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet_MetaData[] = {
 		{ "Category", "MiniGameSettings" },
 		{ "ModuleRelativePath", "MiniGames/UnlockOpen.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockOpen_Statics::NewProp_valueScore = { "valueScore", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockOpen, valueScore), METADATA_PARAMS(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_valueScore_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_valueScore_MetaData)) };
+	void Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet_SetBit(void* Obj)
+	{
+		((AUnlockOpen*)Obj)->hasBracelet = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet = { "hasBracelet", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AUnlockOpen), &Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet_SetBit, METADATA_PARAMS(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar_MetaData[] = {
+		{ "Category", "MiniGameSettings" },
+		{ "ModuleRelativePath", "MiniGames/UnlockOpen.h" },
+	};
+#endif
+	void Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar_SetBit(void* Obj)
+	{
+		((AUnlockOpen*)Obj)->hasPearlCollar = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar = { "hasPearlCollar", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AUnlockOpen), &Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar_SetBit, METADATA_PARAMS(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUnlockOpen_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockOpen_Statics::NewProp_scoreToWin,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockOpen_Statics::NewProp_valueScore,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasMirror,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasBracelet,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockOpen_Statics::NewProp_hasPearlCollar,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUnlockOpen_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUnlockOpen>::IsAbstract,
@@ -98,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeUnlockOpen() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUnlockOpen, 2750284690);
+	IMPLEMENT_CLASS(AUnlockOpen, 3049438924);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<AUnlockOpen>()
 	{
 		return AUnlockOpen::StaticClass();

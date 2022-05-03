@@ -19,7 +19,10 @@ void AUnlockDig::Tick(float DeltaTime)
 
 	if (!beginGame) return;
 
-	if (infinite)
+	if (bonesCollected >= bonesToCollect)
+		won = true;
+
+	/*if (infinite)
 	{
 		if (bonesCollected >= bonesToCollect)
 			won = true;
@@ -42,5 +45,5 @@ void AUnlockDig::Tick(float DeltaTime)
 
 			else fTimer += DeltaTime;
 		}
-	}
+	}*/
 }

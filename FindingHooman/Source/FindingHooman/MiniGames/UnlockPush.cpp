@@ -17,4 +17,6 @@ void AUnlockPush::Tick(float DeltaTime)
 
 	if (!beginGame) return;
 
+	if (hasWrapper && hasHotdog && hasBun)
+		won = true;
 }

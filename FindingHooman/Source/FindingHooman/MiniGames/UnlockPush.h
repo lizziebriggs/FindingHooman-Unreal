@@ -13,6 +13,15 @@ class FINDINGHOOMAN_API AUnlockPush : public AMiniGame
 public:
 	AUnlockPush();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasWrapper;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasHotdog;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		bool hasBun;
+
 protected:
 	virtual void BeginPlay() override;
 

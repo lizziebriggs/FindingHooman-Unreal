@@ -604,19 +604,33 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinZoom;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertCamera_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertCameraHori_MetaData[];
 #endif
-		static void NewProp_InvertCamera_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertCamera;
+		static void NewProp_InvertCameraHori_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertCameraHori;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertMovement_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertCameraVert_MetaData[];
 #endif
-		static void NewProp_InvertMovement_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertMovement;
+		static void NewProp_InvertCameraVert_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertCameraVert;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivity_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivityHori_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivity;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivityHori;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivityVert_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivityVert;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertMovementHori_MetaData[];
+#endif
+		static void NewProp_InvertMovementHori_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertMovementHori;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertMovementVert_MetaData[];
+#endif
+		static void NewProp_InvertMovementVert_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertMovementVert;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_normalWalkSpeed_MetaData[];
 #endif
@@ -751,34 +765,65 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom = { "MinZoom", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MinZoom), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
-	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_SetBit(void* Obj)
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori_SetBit(void* Obj)
 	{
-		((ADoge*)Obj)->InvertCamera = 1;
+		((ADoge*)Obj)->InvertCameraHori = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera = { "InvertCamera", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori = { "InvertCameraHori", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
-	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_SetBit(void* Obj)
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert_SetBit(void* Obj)
 	{
-		((ADoge*)Obj)->InvertMovement = 1;
+		((ADoge*)Obj)->InvertCameraVert = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement = { "InvertMovement", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert = { "InvertCameraVert", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityHori_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity = { "MouseSensitivity", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MouseSensitivity), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityHori = { "MouseSensitivityHori", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MouseSensitivityHori), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityHori_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityHori_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityVert_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityVert = { "MouseSensitivityVert", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MouseSensitivityVert), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityVert_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityVert_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "// MOVEMENT\n" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+		{ "ToolTip", "MOVEMENT" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->InvertMovementHori = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori = { "InvertMovementHori", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->InvertMovementVert = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert = { "InvertMovementVert", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed_MetaData[] = {
 		{ "Category", "Movement" },
@@ -918,9 +963,12 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_ZoomSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MaxZoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraHori,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertCameraVert,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityHori,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivityVert,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementHori,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_TriggerBox,
@@ -964,7 +1012,7 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoge, 1322127153);
+	IMPLEMENT_CLASS(ADoge, 478956828);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<ADoge>()
 	{
 		return ADoge::StaticClass();
