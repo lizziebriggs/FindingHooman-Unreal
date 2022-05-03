@@ -26,6 +26,41 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ADoge::execWearBunnyHat)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->WearBunnyHat();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ADoge::execWearAcornHat)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->WearAcornHat();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ADoge::execWearGooseHat)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->WearGooseHat();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ADoge::execWearPropellerHat)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->WearPropellerHat();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ADoge::execRevertAbilities)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RevertAbilities();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ADoge::execOnOverlapSkillBegin)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -95,8 +130,13 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 			{ "OnOverlapBegin", &ADoge::execOnOverlapBegin },
 			{ "OnOverlapEnd", &ADoge::execOnOverlapEnd },
 			{ "OnOverlapSkillBegin", &ADoge::execOnOverlapSkillBegin },
+			{ "RevertAbilities", &ADoge::execRevertAbilities },
 			{ "SetSkill", &ADoge::execSetSkill },
 			{ "UnlockSkill", &ADoge::execUnlockSkill },
+			{ "WearAcornHat", &ADoge::execWearAcornHat },
+			{ "WearBunnyHat", &ADoge::execWearBunnyHat },
+			{ "WearGooseHat", &ADoge::execWearGooseHat },
+			{ "WearPropellerHat", &ADoge::execWearPropellerHat },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -356,6 +396,30 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ADoge_RevertAbilities_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoge_RevertAbilities_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// HAT ABILITIES\n" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+		{ "ToolTip", "HAT ABILITIES" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoge_RevertAbilities_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoge, nullptr, "RevertAbilities", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoge_RevertAbilities_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoge_RevertAbilities_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADoge_RevertAbilities()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADoge_RevertAbilities_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ADoge_SetSkill_Statics
 	{
 		struct Doge_eventSetSkill_Parms
@@ -420,6 +484,94 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ADoge_WearAcornHat_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoge_WearAcornHat_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoge_WearAcornHat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoge, nullptr, "WearAcornHat", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoge_WearAcornHat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoge_WearAcornHat_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADoge_WearAcornHat()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADoge_WearAcornHat_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADoge_WearBunnyHat_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoge_WearBunnyHat_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoge_WearBunnyHat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoge, nullptr, "WearBunnyHat", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoge_WearBunnyHat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoge_WearBunnyHat_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADoge_WearBunnyHat()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADoge_WearBunnyHat_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADoge_WearGooseHat_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoge_WearGooseHat_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoge_WearGooseHat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoge, nullptr, "WearGooseHat", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoge_WearGooseHat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoge_WearGooseHat_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADoge_WearGooseHat()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADoge_WearGooseHat_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADoge_WearPropellerHat_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoge_WearPropellerHat_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoge_WearPropellerHat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoge, nullptr, "WearPropellerHat", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoge_WearPropellerHat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoge_WearPropellerHat_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADoge_WearPropellerHat()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADoge_WearPropellerHat_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ADoge_NoRegister()
 	{
 		return ADoge::StaticClass();
@@ -452,13 +604,27 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinZoom;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalkSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertCamera_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WalkSpeed;
+		static void NewProp_InvertCamera_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertCamera;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RunSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InvertMovement_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RunSpeed;
+		static void NewProp_InvertMovement_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InvertMovement;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_normalWalkSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_normalWalkSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_normalRunSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_normalRunSpeed;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TriggerBox_MetaData[];
 #endif
@@ -472,29 +638,51 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currentSkill;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanOpen_MetaData[];
-#endif
-		static void NewProp_bCanOpen_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanOpen;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanPush_MetaData[];
 #endif
 		static void NewProp_bCanPush_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanPush;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanBark_MetaData[];
-#endif
-		static void NewProp_bCanBark_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanBark;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanDig_MetaData[];
 #endif
 		static void NewProp_bCanDig_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanDig;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanBark_MetaData[];
+#endif
+		static void NewProp_bCanBark_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanBark;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanOpen_MetaData[];
+#endif
+		static void NewProp_bCanOpen_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanOpen;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_barkSound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_barkSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_jumpBoost_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_jumpBoost;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_gooseSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_gooseSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isGoose_MetaData[];
+#endif
+		static void NewProp_isGoose_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isGoose;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_squirrelsFollow_MetaData[];
+#endif
+		static void NewProp_squirrelsFollow_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_squirrelsFollow;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_speedBoost_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speedBoost;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -508,8 +696,13 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		{ &Z_Construct_UFunction_ADoge_OnOverlapBegin, "OnOverlapBegin" }, // 1744049331
 		{ &Z_Construct_UFunction_ADoge_OnOverlapEnd, "OnOverlapEnd" }, // 504346438
 		{ &Z_Construct_UFunction_ADoge_OnOverlapSkillBegin, "OnOverlapSkillBegin" }, // 44326730
+		{ &Z_Construct_UFunction_ADoge_RevertAbilities, "RevertAbilities" }, // 2943375473
 		{ &Z_Construct_UFunction_ADoge_SetSkill, "SetSkill" }, // 2297685351
 		{ &Z_Construct_UFunction_ADoge_UnlockSkill, "UnlockSkill" }, // 7297581
+		{ &Z_Construct_UFunction_ADoge_WearAcornHat, "WearAcornHat" }, // 2265084145
+		{ &Z_Construct_UFunction_ADoge_WearBunnyHat, "WearBunnyHat" }, // 3346827375
+		{ &Z_Construct_UFunction_ADoge_WearGooseHat, "WearGooseHat" }, // 2962804306
+		{ &Z_Construct_UFunction_ADoge_WearPropellerHat, "WearPropellerHat" }, // 3496325138
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::Class_MetaDataParams[] = {
@@ -558,19 +751,48 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom = { "MinZoom", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MinZoom), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_WalkSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_WalkSpeed = { "WalkSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, WalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_WalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_WalkSpeed_MetaData)) };
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->InvertCamera = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera = { "InvertCamera", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_RunSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_RunSpeed = { "RunSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, RunSpeed), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_RunSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_RunSpeed_MetaData)) };
+	void Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->InvertMovement = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement = { "InvertMovement", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity = { "MouseSensitivity", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, MouseSensitivity), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed = { "normalWalkSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, normalWalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed = { "normalRunSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, normalRunSpeed), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_TriggerBox_MetaData[] = {
 		{ "Category", "Interaction" },
@@ -597,17 +819,6 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_currentSkill = { "currentSkill", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, currentSkill), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_currentSkill_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_currentSkill_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData[] = {
-		{ "Category", "Skills" },
-		{ "ModuleRelativePath", "Player/Doge.h" },
-	};
-#endif
-	void Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_SetBit(void* Obj)
-	{
-		((ADoge*)Obj)->bCanOpen = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen = { "bCanOpen", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush_MetaData[] = {
 		{ "Category", "Skills" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
@@ -618,17 +829,6 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		((ADoge*)Obj)->bCanPush = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush = { "bCanPush", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData[] = {
-		{ "Category", "Skills" },
-		{ "ModuleRelativePath", "Player/Doge.h" },
-	};
-#endif
-	void Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_SetBit(void* Obj)
-	{
-		((ADoge*)Obj)->bCanBark = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark = { "bCanBark", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig_MetaData[] = {
 		{ "Category", "Skills" },
@@ -641,28 +841,101 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig = { "bCanDig", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData[] = {
+		{ "Category", "Skills" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->bCanBark = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark = { "bCanBark", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData[] = {
+		{ "Category", "Skills" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->bCanOpen = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen = { "bCanOpen", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_barkSound_MetaData[] = {
 		{ "Category", "Sounds" },
 		{ "ModuleRelativePath", "Player/Doge.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_barkSound = { "barkSound", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, barkSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_barkSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_barkSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_jumpBoost_MetaData[] = {
+		{ "Category", "Hats" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_jumpBoost = { "jumpBoost", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, jumpBoost), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_jumpBoost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_jumpBoost_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_gooseSound_MetaData[] = {
+		{ "Category", "Hats" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_gooseSound = { "gooseSound", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, gooseSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_gooseSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_gooseSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_isGoose_MetaData[] = {
+		{ "Category", "Hats" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_isGoose_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->isGoose = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_isGoose = { "isGoose", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_isGoose_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_isGoose_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_isGoose_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow_MetaData[] = {
+		{ "Category", "Hats" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->squirrelsFollow = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow = { "squirrelsFollow", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_speedBoost_MetaData[] = {
+		{ "Category", "Hats" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_speedBoost = { "speedBoost", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, speedBoost), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_speedBoost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_speedBoost_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADoge_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_ZoomSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MaxZoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MinZoom,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_WalkSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_RunSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertCamera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_MouseSensitivity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_TriggerBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_SkillRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_currentSkill,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanPush,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanDig,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanBark,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_bCanOpen,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_barkSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_jumpBoost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_gooseSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_isGoose,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_squirrelsFollow,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_speedBoost,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADoge_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADoge>::IsAbstract,
@@ -691,7 +964,7 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoge, 2515710204);
+	IMPLEMENT_CLASS(ADoge, 1322127153);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<ADoge>()
 	{
 		return ADoge::StaticClass();

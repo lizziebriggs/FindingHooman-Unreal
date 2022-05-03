@@ -19,6 +19,28 @@ void AUnlockDig::Tick(float DeltaTime)
 
 	if (!beginGame) return;
 
-	if (bonesCollected >= bonesToCollect)
-		won = true;
+	if (infinite)
+	{
+		if (bonesCollected >= bonesToCollect)
+			won = true;
+	}
+	else
+	{
+		if (fTimer >= goalTime)
+		{
+			if (bonesCollected >= bonesToCollect)
+				won = true;
+			
+			doge->LockSkill(skill);
+			won = false;
+			beginGame = false;
+		}
+		else
+		{
+			if (bonesCollected >= bonesToCollect)
+				fTimer = goalTime;
+
+			else fTimer += DeltaTime;
+		}
+	}
 }

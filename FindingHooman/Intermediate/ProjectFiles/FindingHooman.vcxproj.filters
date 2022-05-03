@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FindingHooman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B410F21C-81F2-482C-9EC6-8AB53DA9F972}</UniqueIdentifier>
+      <UniqueIdentifier>{87C8C243-BCFA-4C54-96F6-B5B8B1FAF734}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,26 @@
     <None Include="..\..\Source\FindingHoomanEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{BEF4719A-2B04-4B4C-9097-60D4D48DDBA1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\FindingHooman">
-      <UniqueIdentifier>{A39F0625-C443-459F-9415-D2802ED89C02}</UniqueIdentifier>
+      <UniqueIdentifier>{395D56B5-6477-4538-A8DF-C23FA71BAB78}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FindingHooman\FindingHooman.Build.cs">
       <Filter>Source\FindingHooman</Filter>
@@ -41,8 +59,29 @@
     <ClInclude Include="..\..\Source\FindingHooman\FindingHoomanGameModeBase.h">
       <Filter>Source\FindingHooman</Filter>
     </ClInclude>
+    <Filter Include="Source\FindingHooman\HatMetagame">
+      <UniqueIdentifier>{9C87CFFB-6B4B-4261-93B4-D28DEF6671AF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FindingHooman\HatMetagame\Acorn.cpp">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\HatMetagame\Acorn.h">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\HatMetagame\SquirrelActor.cpp">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\HatMetagame\SquirrelActor.h">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FindingHooman\HatMetagame\SquirrelManager.cpp">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FindingHooman\HatMetagame\SquirrelManager.h">
+      <Filter>Source\FindingHooman\HatMetagame</Filter>
+    </ClInclude>
     <Filter Include="Source\FindingHooman\Interfaces">
-      <UniqueIdentifier>{2B1BFA6C-785B-497E-B390-C1711A0660F9}</UniqueIdentifier>
+      <UniqueIdentifier>{9113E2D4-237B-4CFB-94CF-4DEA96EADD31}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\Interfaces\BarkInterface.cpp">
       <Filter>Source\FindingHooman\Interfaces</Filter>
@@ -57,7 +96,7 @@
       <Filter>Source\FindingHooman\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\FindingHooman\MiniGames">
-      <UniqueIdentifier>{9632C69D-C4D7-4BCB-B533-FBB484B96B7B}</UniqueIdentifier>
+      <UniqueIdentifier>{572D6EF0-81D6-48B7-9641-3F142845DC14}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\MiniGames\MiniGame.cpp">
       <Filter>Source\FindingHooman\MiniGames</Filter>
@@ -90,7 +129,7 @@
       <Filter>Source\FindingHooman\MiniGames</Filter>
     </ClInclude>
     <Filter Include="Source\FindingHooman\NPCs">
-      <UniqueIdentifier>{376162EA-C8C0-4191-81A5-0D5BC108617F}</UniqueIdentifier>
+      <UniqueIdentifier>{FBB911F8-7B7A-4AE7-B07C-1CD09FCE4E2C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\NPCs\BirbActor.cpp">
       <Filter>Source\FindingHooman\NPCs</Filter>
@@ -99,7 +138,7 @@
       <Filter>Source\FindingHooman\NPCs</Filter>
     </ClInclude>
     <Filter Include="Source\FindingHooman\Player">
-      <UniqueIdentifier>{DCF9DDB1-10A5-4613-B41A-C05526B03EB9}</UniqueIdentifier>
+      <UniqueIdentifier>{AAF7811A-F5B1-4572-B090-A95A50F08890}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FindingHooman\Player\Doge.cpp">
       <Filter>Source\FindingHooman\Player</Filter>

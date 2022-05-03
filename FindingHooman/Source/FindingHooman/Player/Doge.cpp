@@ -50,6 +50,9 @@ void ADoge::BeginPlay()
 {
 	Super::BeginPlay();
 
+	WalkSpeed = normalWalkSpeed;
+	RunSpeed = normalRunSpeed;
+
 	bIsRunning = false;
 	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
@@ -65,8 +68,10 @@ void ADoge::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("Turn", this, &ADoge::TurnCamera);
+	//PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &ADoge::LookUp);
+	//PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Zoom", this, &ADoge::ZoomCamera);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ADoge::MoveForward);
@@ -78,10 +83,10 @@ void ADoge::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADoge::Interact);
 
-	PlayerInputComponent->BindAction("SetSkillOpen", IE_Pressed, this, &ADoge::SetSkillOpen);
 	PlayerInputComponent->BindAction("SetSkillPush", IE_Pressed, this, &ADoge::SetSkillPush);
-	PlayerInputComponent->BindAction("SetSkillBark", IE_Pressed, this, &ADoge::SetSkillBark);
 	PlayerInputComponent->BindAction("SetSkillDig", IE_Pressed, this, &ADoge::SetSkillDig);
+	PlayerInputComponent->BindAction("SetSkillBark", IE_Pressed, this, &ADoge::SetSkillBark);
+	PlayerInputComponent->BindAction("SetSkillOpen", IE_Pressed, this, &ADoge::SetSkillOpen);
 }
 
 void ADoge::ZoomCamera(float Axis)
@@ -99,6 +104,30 @@ void ADoge::ZoomCamera(float Axis)
 	}
 }
 
+void ADoge::TurnCamera(float Val)
+{
+	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
+	{
+		APlayerController* const PC = CastChecked<APlayerController>(Controller);
+
+		if (InvertCamera)
+			PC->AddYawInput(-Val * MouseSensitivity);
+		else PC->AddYawInput(Val * MouseSensitivity);
+	}
+}
+
+void ADoge::LookUp(float Val)
+{
+	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
+	{
+		APlayerController* const PC = CastChecked<APlayerController>(Controller);
+
+		if (InvertCamera)
+			PC->AddPitchInput(-Val * MouseSensitivity);
+		else PC->AddPitchInput(Val * MouseSensitivity);
+	}
+}
+
 
 // MOVEMENT
 
@@ -109,7 +138,9 @@ void ADoge::MoveForward(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
-	AddMovementInput(Direction, Axis);
+	if (InvertMovement)
+		AddMovementInput(-Direction, Axis);
+	else AddMovementInput(Direction, Axis);
 }
 
 void ADoge::MoveRight(float Axis)
@@ -119,7 +150,9 @@ void ADoge::MoveRight(float Axis)
 
 	const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
-	AddMovementInput(Direction, Axis);
+	if (InvertMovement)
+		AddMovementInput(-Direction, Axis);
+	else AddMovementInput(Direction, Axis);
 }
 
 void ADoge::ToggleRun()
@@ -154,16 +187,16 @@ void ADoge::UnlockSkill(int i)
 	switch (i)
 	{
 	case 1:
-		bCanOpen = true;
+		bCanPush = true;
 		break;
 	case 2:
-		bCanPush = true;
+		bCanDig = true;
 		break;
 	case 3:
 		bCanBark = true;
 		break;
 	case 4:
-		bCanDig = true;
+		bCanOpen = true;
 		break;
 
 	default:
@@ -176,16 +209,16 @@ void ADoge::LockSkill(int i)
 	switch (i)
 	{
 	case 1:
-		bCanOpen = false;
+		bCanPush = true;
 		break;
 	case 2:
-		bCanPush = false;
+		bCanDig = true;
 		break;
 	case 3:
-		bCanBark = false;
+		bCanBark = true;
 		break;
 	case 4:
-		bCanDig = false;
+		bCanOpen = true;
 		break;
 
 	default:
@@ -205,6 +238,51 @@ void ADoge::OnOverlapSkillBegin(UPrimitiveComponent* OverlappedComp, AActor* Oth
 		//UE_LOG(LogTemp, Warning, TEXT("Overlap bark begin"));
 	}
 	
+}
+
+
+// HAT ABILITIES
+
+void ADoge::RevertAbilities()
+{
+	GetCharacterMovement()->JumpZVelocity = 450.0f;
+	
+	isGoose = false;
+
+	squirrelsFollow = false;
+
+	WalkSpeed = normalWalkSpeed;
+	RunSpeed = normalRunSpeed;
+	if (bIsRunning) GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	else GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+}
+
+void ADoge::WearPropellerHat()
+{
+	RevertAbilities();
+	GetCharacterMovement()->JumpZVelocity *= jumpBoost;
+}
+
+void ADoge::WearGooseHat()
+{
+	RevertAbilities();
+	isGoose = true;
+}
+
+void ADoge::WearAcornHat()
+{
+	RevertAbilities();
+	squirrelsFollow = true;
+}
+
+void ADoge::WearBunnyHat()
+{
+	RevertAbilities();
+	WalkSpeed *= speedBoost;
+	RunSpeed *= speedBoost;
+
+	if (bIsRunning) GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	else GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 
