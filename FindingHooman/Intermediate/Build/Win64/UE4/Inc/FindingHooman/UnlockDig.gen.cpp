@@ -32,13 +32,17 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bonesToCollect_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_amountToDig_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_bonesToCollect;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_amountToDig;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bonesCollected_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_amountDigged_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_bonesCollected;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_amountDigged;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_goalTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_goalTime;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -54,22 +58,30 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountToDig_MetaData[] = {
 		{ "Category", "MiniGameSettings" },
 		{ "ModuleRelativePath", "MiniGames/UnlockDig.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect = { "bonesToCollect", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, bonesToCollect), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountToDig = { "amountToDig", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, amountToDig), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountToDig_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountToDig_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountDigged_MetaData[] = {
 		{ "Category", "MiniGameSettings" },
 		{ "ModuleRelativePath", "MiniGames/UnlockDig.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected = { "bonesCollected", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, bonesCollected), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountDigged = { "amountDigged", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, amountDigged), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountDigged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountDigged_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData[] = {
+		{ "Category", "MiniGameSettings" },
+		{ "ModuleRelativePath", "MiniGames/UnlockDig.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime = { "goalTime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockDig, goalTime), METADATA_PARAMS(Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUnlockDig_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesToCollect,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_bonesCollected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountToDig,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_amountDigged,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockDig_Statics::NewProp_goalTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUnlockDig_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUnlockDig>::IsAbstract,
@@ -98,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeUnlockDig() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUnlockDig, 4210214585);
+	IMPLEMENT_CLASS(AUnlockDig, 19791262);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<AUnlockDig>()
 	{
 		return AUnlockDig::StaticClass();

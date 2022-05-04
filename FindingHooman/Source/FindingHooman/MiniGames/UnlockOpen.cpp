@@ -10,7 +10,7 @@ void AUnlockOpen::BeginPlay()
 {
 	Super::BeginPlay();
 
-	valueScore = 0;
+	//valueScore = 0;
 }
 
 void AUnlockOpen::Tick(float DeltaTime)
@@ -19,6 +19,9 @@ void AUnlockOpen::Tick(float DeltaTime)
 
 	if (!beginGame) return;
 
-	if (valueScore >= scoreToWin)
+	/*if (valueScore >= scoreToWin)
+		won = true;*/
+
+	if (hasMirror && hasBracelet && hasPearlCollar)
 		won = true;
 }

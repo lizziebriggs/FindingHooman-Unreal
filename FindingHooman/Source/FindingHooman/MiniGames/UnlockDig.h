@@ -14,17 +14,13 @@ public:
 	AUnlockDig();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
-		int bonesToCollect;
+		int amountToDig;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
-		int bonesCollected;
+		int amountDigged;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
 		float goalTime;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
-		bool infinite;
-	float fTimer;
 
 protected:
 	virtual void BeginPlay() override;

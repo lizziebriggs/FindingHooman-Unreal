@@ -396,41 +396,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Developer/PixWinPlugin/PixWinPlugin.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "PIX for Windows GPU Capture Plugin",
-				"Description": "PIX for Windows graphics debugger integration.",
-				"Category": "Rendering",
-				"CreatedBy": "Epic Games Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"SupportedTargetPlatforms": [
-					"Win64"
-				],
-				"Modules": [
-					{
-						"Name": "PixWinPlugin",
-						"Type": "DeveloperTool",
-						"LoadingPhase": "PostConfigInit",
-						"WhitelistPlatforms": [
-							"Win64"
-						],
-						"BlacklistTargets": [
-							"Server"
-						]
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Developer/PluginUtils/PluginUtils.uplugin",
 			"Descriptor": 
 			{

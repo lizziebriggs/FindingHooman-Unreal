@@ -41,7 +41,12 @@
 		{
 			"ShaderMapHash": "7B48EFA7785D362B0DE4CE89C337822BE851F69E",
 			"Assets": [
-				"/OculusVR/Materials/TouchForQuestRiftSControllerMaterial"
+				"/OculusVR/Materials/TouchForQuestRiftSControllerMaterial",
+				"/Game/Resources/Models/Collectables/Material_001",
+				"/Game/Resources/Models/Collectables/Material_008",
+				"/Game/Resources/Models/Hot_Dog_Stand_texture_Mat",
+				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/pendant_Material",
+				"/Game/Resources/Models/Enviroment/PillarMaterial_001"
 			]
 		},
 		{
@@ -217,7 +222,14 @@
 			"ShaderMapHash": "6CB5CAC2EF8223107EA2B21906291F541215A3CF",
 			"Assets": [
 				"/Engine/VREditor/TransformGizmo/Xray",
-				"/Game/Resources/Models/DogFinalModal1"
+				"/Game/Resources/Models/Collectables/Material_007",
+				"/Game/Resources/Models/Collectables/Material_006",
+				"/Game/Resources/Models/Collectables/Material_004",
+				"/Game/Resources/Models/Collectables/Material_003",
+				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/Material",
+				"/Game/Resources/Models/Collectables/defaultMat",
+				"/Game/Resources/Models/Material_002",
+				"/Game/Resources/Models/Material_001"
 			]
 		},
 		{
@@ -281,21 +293,10 @@
 			]
 		},
 		{
-			"ShaderMapHash": "8FD4AB7FDC0BC3C837929677393195B7422CE32B",
+			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
 			"Assets": [
-				"/Game/Resources/DogFinalModal"
-			]
-		},
-		{
-			"ShaderMapHash": "95B3910418E5A65D86619C05D1BD7126CDFA9D68",
-			"Assets": [
-				"/Game/Resources/Textures/Dog/DogFinalModal_Base_color_Mat"
-			]
-		},
-		{
-			"ShaderMapHash": "697D4210EAB870359935729275473BBAF8992563",
-			"Assets": [
-				"/Game/Resources/Materials/Material_MiniMap"
+				"/Game/StarterContent/Materials/M_Basic_Wall",
+				"/Game/Resources/Materials/Enviroment/Decoration/Colour_Materials/M_Base_Colour_001"
 			]
 		},
 		{
@@ -329,21 +330,34 @@
 			]
 		},
 		{
-			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
+			"ShaderMapHash": "697D4210EAB870359935729275473BBAF8992563",
 			"Assets": [
-				"/Game/StarterContent/Materials/M_Basic_Wall"
+				"/Game/Resources/Materials/Material_MiniMap"
+			]
+		},
+		{
+			"ShaderMapHash": "654DCFE485423A411E123F7DDDBF2AFBA838AC59",
+			"Assets": [
+				"/Game/UI/RenderTargets/ShibaUI_RT_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "897422F2601DFEEA6C48B5D173FB8636677D5F0A",
+			"Assets": [
+				"/Game/Resources/Models/Pigeon/Pigeon_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "FD209B9BBD91B364CA47FEBC02DC31113A5BB337",
+			"Assets": [
+				"/Game/Resources/Animations/FlipBooks/MainMenu/Squish_FlipBookMaterial",
+				"/Game/Resources/Animations/FlipBooks/MainMenu/Blink_FlipBookMaterial"
 			]
 		},
 		{
 			"ShaderMapHash": "F0FA02A67FBBCF715E35F0F2A4FFD15364BB3086",
 			"Assets": [
 				"/Game/StarterContent/Props/Materials/M_Frame"
-			]
-		},
-		{
-			"ShaderMapHash": "F66FC83168E3609D05D512B3BC2E29DE9767506D",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Basic_Floor"
 			]
 		},
 		{
@@ -404,6 +418,12 @@
 			"ShaderMapHash": "C24FE033C05120AF73E349FD63A2638164A53D4C",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Tech_Panel"
+			]
+		},
+		{
+			"ShaderMapHash": "3712AA3719AC40F15F0B6201641EDA31DF0299FC",
+			"Assets": [
+				"/Game/StarterContent/Materials/M_Tech_Hex_Tile_Pulse"
 			]
 		},
 		{
@@ -479,6 +499,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "D759BD80381B59F9597345BC0B20E373FF0EA3D0",
+			"Assets": [
+				"/Game/StarterContent/Materials/M_Concrete_Poured"
+			]
+		},
+		{
 			"ShaderMapHash": "A7F6ADE573DFB03C2EC79714CBE64F86A8AD2E53",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Concrete_Panels"
@@ -533,15 +559,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "00ACD0B43BEB9AE01C373EBB8D2FFA362E9E34ED",
+			"ShaderMapHash": "EE5C779A86755473406ED05E9E7490306F8F5F67",
 			"Assets": [
-				"/Engine/EngineMaterials/AntiAliasedTextMaterialTranslucent"
+				"/Game/StarterContent/Materials/M_Brick_Clay_Beveled"
 			]
 		},
 		{
-			"ShaderMapHash": "D759BD80381B59F9597345BC0B20E373FF0EA3D0",
+			"ShaderMapHash": "00ACD0B43BEB9AE01C373EBB8D2FFA362E9E34ED",
 			"Assets": [
-				"/Game/StarterContent/Materials/M_Concrete_Poured"
+				"/Engine/EngineMaterials/AntiAliasedTextMaterialTranslucent"
 			]
 		},
 		{
@@ -624,6 +650,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "F66FC83168E3609D05D512B3BC2E29DE9767506D",
+			"Assets": [
+				"/Game/StarterContent/Materials/M_Basic_Floor"
+			]
+		},
+		{
 			"ShaderMapHash": "403BE01FED35672468C59021EDD516BBF0154AC5",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Concrete_Grime"
@@ -639,24 +671,6 @@
 			"ShaderMapHash": "EDA7A6D577EB0133614EB81AE0881C3D66CE5B54",
 			"Assets": [
 				"/Game/StarterContent/Materials/M_Metal_Gold"
-			]
-		},
-		{
-			"ShaderMapHash": "3712AA3719AC40F15F0B6201641EDA31DF0299FC",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Tech_Hex_Tile_Pulse"
-			]
-		},
-		{
-			"ShaderMapHash": "EE5C779A86755473406ED05E9E7490306F8F5F67",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Clay_Beveled"
-			]
-		},
-		{
-			"ShaderMapHash": "CBE1B9A36802EF5FE309B1F94BBC5001044B3DF3",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_AssetPlatform"
 			]
 		},
 		{
@@ -709,15 +723,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "AF630D10EC29E174CC6981011633B94F1A86668B",
+			"ShaderMapHash": "CBE1B9A36802EF5FE309B1F94BBC5001044B3DF3",
 			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Tree"
-			]
-		},
-		{
-			"ShaderMapHash": "7B20BCE2B25A2E15B7E5DFE0C2094DF133BDE246",
-			"Assets": [
-				"/Game/Resources/Materials/Base"
+				"/Game/StarterContent/Materials/M_AssetPlatform"
 			]
 		},
 		{
@@ -727,27 +735,68 @@
 			]
 		},
 		{
-			"ShaderMapHash": "A6EA5A3FCD1970EF392BE02A3BC17B4534A6A7C3",
+			"ShaderMapHash": "8FD4AB7FDC0BC3C837929677393195B7422CE32B",
 			"Assets": [
-				"/Game/Resources/Materials/Toon/PP_Toon_M_001"
-			]
-		},
-		{
-			"ShaderMapHash": "DDC76D3373D2C8A9C3F888F4F22BED281006D474",
-			"Assets": [
-				"/Game/Resources/Materials/Toon/PP_Outline_M_001"
-			]
-		},
-		{
-			"ShaderMapHash": "B3F8797D75EDF90FFEA8BCCDC67B2DE9670554F5",
-			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Water/M_Water_Main_001"
-			]
-		},
-		{
-			"ShaderMapHash": "A4BC21BDB19D9A2A7ACA48D6578362C6FF2248BE",
-			"Assets": [
-				"/Game/Resources/Models/DogFinalModal2"
+				"/Game/Resources/Models/NewModels/DogFinalModal",
+				"/Game/Resources/DogAlt/DogFinalModal",
+				"/Game/Resources/Models/NewModels/Default_OBJ",
+				"/Game/Resources/Models/NewModels/PM3D_Sphere3D1",
+				"/Game/Resources/Models/NewModels/DogFinalModal_001",
+				"/Game/Resources/Models/DogFinalModal2",
+				"/Game/Resources/Models/PM3D_Sphere3D1",
+				"/Game/Resources/Models/DogFinalModal_001",
+				"/Game/Resources/Models/DogFinalModal3",
+				"/Game/Resources/Animations/GirlCap/Material_019",
+				"/Game/Resources/Animations/GilrBun/Material",
+				"/Game/Resources/Animations/BoyClasses/Material_040",
+				"/Game/Resources/Animations/BoyCap/Material_050",
+				"/Game/Resources/Animations/BoyCap/Material_049",
+				"/Game/Resources/Animations/BoyCap/Material_052",
+				"/Game/Resources/Animations/BoyCap/Material_051",
+				"/Game/Resources/Animations/BoyCap/Material_053",
+				"/Game/Resources/Animations/BoyCap/Material_055",
+				"/Game/Resources/Animations/BoyCap/Material_054",
+				"/Game/Resources/Animations/BoyClasses/Material_034",
+				"/Game/Resources/Animations/BoyClasses/Material_033",
+				"/Game/Resources/Animations/BoyClasses/Material_035",
+				"/Game/Resources/Animations/BoyClasses/Material_036",
+				"/Game/Resources/Animations/BoyClasses/Material_037",
+				"/Game/Resources/Animations/BoyClasses/Material_039",
+				"/Game/Resources/Animations/BoyClasses/Material_038",
+				"/Game/Resources/Animations/GilrBun/Material_003",
+				"/Game/Resources/Animations/GilrBun/Material_004",
+				"/Game/Resources/Animations/GilrBun/Material_007",
+				"/Game/Resources/Animations/GilrBun/Material_006",
+				"/Game/Resources/Animations/GilrBun/Material_005",
+				"/Game/Resources/Animations/GirlCap/Material_022",
+				"/Game/Resources/Animations/GirlCap/Material_021",
+				"/Game/Resources/Animations/GirlCap/Material_023",
+				"/Game/Resources/Animations/GirlCap/Material_017",
+				"/Game/Resources/Animations/GirlCap/Material_016",
+				"/Game/Resources/Animations/GirlCap/Material_020",
+				"/Game/Resources/Animations/GirlCap/Material_018",
+				"/Game/Resources/Animations/LadySmall/Material_041",
+				"/Game/Resources/Animations/LadySmall/Material_042",
+				"/Game/Resources/Animations/LadySmall/Material_044",
+				"/Game/Resources/Animations/LadySmall/Material_045",
+				"/Game/Resources/Animations/LadySmall/Material_043",
+				"/Game/Resources/Animations/LadySmall/Material_047",
+				"/Game/Resources/Animations/LadySmall/Material_046",
+				"/Game/Resources/Animations/LadySmall/Material_048",
+				"/Game/Resources/Animations/OldMan/Material_056",
+				"/Game/Resources/Animations/OldMan/Material_057",
+				"/Game/Resources/Animations/BoldMan/Material_060",
+				"/Game/Resources/Animations/BoldMan/Material_058",
+				"/Game/Resources/Animations/OldMan/Material_060",
+				"/Game/Resources/Animations/OldMan/Material_058",
+				"/Game/Resources/Animations/OldMan/Material_062",
+				"/Game/Resources/Animations/OldMan/Material_061",
+				"/Game/Resources/Animations/BoldMan/Material_062",
+				"/Game/Resources/Animations/BoldMan/Material_061",
+				"/Game/Resources/Animations/OldMan/Material_059",
+				"/Game/Resources/Animations/BoldMan/Material_059",
+				"/Game/Resources/Animations/GilrBun/Material_002",
+				"/Game/Resources/Animations/GilrBun/Material_001"
 			]
 		},
 		{
@@ -757,9 +806,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "6C80021D77B7FBE5BA85056BEC9D641E61C28711",
+			"ShaderMapHash": "03AA0268DB35C2466FDA4AF069E0C5D5D663D5C0",
 			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Door"
+				"/Paper2D/TranslucentUnlitSpriteMaterial"
 			]
 		},
 		{
@@ -787,6 +836,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "6C80021D77B7FBE5BA85056BEC9D641E61C28711",
+			"Assets": [
+				"/Game/StarterContent/Props/Materials/M_Door"
+			]
+		},
+		{
 			"ShaderMapHash": "0229ADA9A973090D936E93410D724337EE4AD624",
 			"Assets": [
 				"/Game/StarterContent/Props/Materials/M_Bush"
@@ -811,9 +866,205 @@
 			]
 		},
 		{
-			"ShaderMapHash": "03AA0268DB35C2466FDA4AF069E0C5D5D663D5C0",
+			"ShaderMapHash": "145DB9E84BA49055830544A4097DB9F76F21B2E8",
 			"Assets": [
-				"/Paper2D/TranslucentUnlitSpriteMaterial"
+				"/Game/Resources/Materials/Enviroment/Interactive_Grass/Materials/Grass_M_001"
+			]
+		},
+		{
+			"ShaderMapHash": "F0D1F480A8888CFD8CFBDCB4FFAAE44592569A23",
+			"Assets": [
+				"/Game/Resources/Materials/Characters/Humans/Human_Base"
+			]
+		},
+		{
+			"ShaderMapHash": "650A3AE876EF4127A00B05058807B2010BD3FE0E",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/M_Texture_Base_001"
+			]
+		},
+		{
+			"ShaderMapHash": "95B3910418E5A65D86619C05D1BD7126CDFA9D68",
+			"Assets": [
+				"/Game/Resources/Textures/Dog/DogFinalModal_Base_color_Mat",
+				"/Game/Resources/Materials/Spitz",
+				"/Game/Resources/Materials/GermanShepherd",
+				"/Game/Resources/Models/Husky/HuskyUV_DogFinalModal_BaseColor_1001_Mat",
+				"/Game/Resources/Materials/Poodle"
+			]
+		},
+		{
+			"ShaderMapHash": "90DF0A0D00E58450D5F3583E3E3281FC47B6F5C1",
+			"Assets": [
+				"/Game/Resources/Materials/Outline_Interaction/M_Outline_001"
+			]
+		},
+		{
+			"ShaderMapHash": "91B79B57C0D706C0842CFFB2CE5604C5EBAAEB58",
+			"Assets": [
+				"/Game/Resources/Animations/FlipBooks/InGame/Bin_Push__1__Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Dig_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Bark_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/GateOpen_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "F0C97C6B16DE073A6E22C52F111C6E190594B5A9",
+			"Assets": [
+				"/Game/Resources/Models/NewModels/Squirrel_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "DDC76D3373D2C8A9C3F888F4F22BED281006D474",
+			"Assets": [
+				"/Game/Resources/Materials/Cel_Shader/PP_Outline_M_001"
+			]
+		},
+		{
+			"ShaderMapHash": "F42CD61A46463FF22E0C7C5DADBB605ED4CE201A",
+			"Assets": [
+				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "DFB8307D8C8673B90DA770CF801BCD7C4F3B5B42",
+			"Assets": [
+				"/Game/UI/HUD/MiniMap/MapMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "56131BFC26F3B0FC059440F592ED35BF08398004",
+			"Assets": [
+				"/Game/Movies/Intro-Material"
+			]
+		},
+		{
+			"ShaderMapHash": "E68AFE93E4EB3617A55E80B59EA735255714AB95",
+			"Assets": [
+				"/Game/Resources/Models/Collectables/TreeNarrow_Texture"
+			]
+		},
+		{
+			"ShaderMapHash": "61B845AF993CFCF4E79D6A1BCB4541014522F8FA",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Stump/StumpMat",
+				"/Game/Resources/Materials/Enviroment/TrunkWide/WideTrunk"
+			]
+		},
+		{
+			"ShaderMapHash": "67A9EFE3C947E71584EE3BF42677ADD82409DABD",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/LandScape/M_Landscape_001"
+			]
+		},
+		{
+			"ShaderMapHash": "C512352F023BE044CB81FEBC6FC989B35E15C2E3",
+			"Assets": [
+				"/Game/StoneMaterial_001"
+			]
+		},
+		{
+			"ShaderMapHash": "902AE779DCFA102AF57AF13D3EE4A264143FADD2",
+			"Assets": [
+				"/Game/Sky_Box/M_Sky_001"
+			]
+		},
+		{
+			"ShaderMapHash": "AF630D10EC29E174CC6981011633B94F1A86668B",
+			"Assets": [
+				"/Game/Resources/Models/Collectables/TreeLarge_Texture_2",
+				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/Wallet_material",
+				"/Game/Resources/Materials/Enviroment/Tree"
+			]
+		},
+		{
+			"ShaderMapHash": "F81BE41AEAC2E7AF04C1226FC3C871252EF81F50",
+			"Assets": [
+				"/Game/Resources/Materials/Screen_Distortion/Drunk_Distortion/PP_Distortion_M_002"
+			]
+		},
+		{
+			"ShaderMapHash": "2524E59EDDE86EBC656244D4464E6F6FCAF92343",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/TrunkNarrow/TreeNarrow"
+			]
+		},
+		{
+			"ShaderMapHash": "6D383E0B34BA81C5C269756F19B1617F009A3294",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Interactive_Grass/Materials/Grass_Collision_M_001"
+			]
+		},
+		{
+			"ShaderMapHash": "27BEFFC4AFFDF4D8DB77A4968F45CF21740294E5",
+			"Assets": [
+				"/Game/Resources/Materials/Cel_Shader/PP_Cel_Shader"
+			]
+		},
+		{
+			"ShaderMapHash": "0C3679EC7FD445B3A0F1A4F914A83775CDB09AA9",
+			"Assets": [
+				"/Game/Resources/VFX/Bin_Smell_M_001"
+			]
+		},
+		{
+			"ShaderMapHash": "63B64E387ABEE5FDF2C11BD4F49416E2FB599099",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/CafeChair/Cafe_Chair_DefaultMaterial_BaseColor_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "349C7CE0B3054AE539BC234E7520EB859DC90642",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/CafeTable/Cafe_Table_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "B757B1854755CEC9B8831E14AC568C1204BFEF97",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/MetalBins/Silver"
+			]
+		},
+		{
+			"ShaderMapHash": "B3F8797D75EDF90FFEA8BCCDC67B2DE9670554F5",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Water/M_Water_Main_001"
+			]
+		},
+		{
+			"ShaderMapHash": "7B20BCE2B25A2E15B7E5DFE0C2094DF133BDE246",
+			"Assets": [
+				"/Game/Resources/Materials/Base"
+			]
+		},
+		{
+			"ShaderMapHash": "75EB9CBA275754BCC44931F1C9BB650661CE34F1",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/New_Water/Materials/M_Combined_Water_001"
+			]
+		},
+		{
+			"ShaderMapHash": "0DD14F2C5B19F182C3DDD0ECD939EE128CD8A430",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "D6823C4130A30CD3FD0B281527DAD132F0CA9467",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "4D2A3811AF095D91460E737EF182CBA97E6E0942",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "49109226590B9B32D3673D17E49355C63315D21F",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
 			]
 		}
 	]

@@ -48,16 +48,25 @@ public:
 	void TurnCamera(float Val);
 	void LookUp(float Val);
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
-		bool InvertCamera;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		bool InvertCameraHori;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
-		bool InvertMovement;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		bool InvertCameraVert;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
-		float MouseSensitivity;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		float MouseSensitivityHori;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		float MouseSensitivityVert;
 
 	// MOVEMENT
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		bool InvertMovementHori;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement)
+		bool InvertMovementVert;
+
 	bool bIsRunning;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)

@@ -20,7 +20,18 @@ void AUnlockBark::Tick(float DeltaTime)
 
 	if (!beginGame) return;
 
-	if (infinite)
+	for (int i = 0; i < birbs.Num(); i++)
+	{
+		if (birbs[i]->inAir)
+			++birbsInAir;
+	}
+
+	if (birbsInAir == birbs.Num())
+		won = true;
+
+	else birbsInAir = 0;
+
+	/*if (infinite)
 	{
 		for (int i = 0; i < birbs.Num(); i++)
 		{
@@ -33,6 +44,7 @@ void AUnlockBark::Tick(float DeltaTime)
 	}
 	else
 	{
+
 		if (fTimer >= goalTime)
 		{
 			if (birbsInAir == birbs.Num())
@@ -69,5 +81,5 @@ void AUnlockBark::Tick(float DeltaTime)
 				birbsInAir = 0;
 			}
 		}
-	}
+	}*/
 }
