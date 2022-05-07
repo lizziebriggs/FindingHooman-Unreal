@@ -1,3 +1,50 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal).
-  Target is up to date
-  Total execution time: 0.44 seconds
+﻿  Using 'git status' to determine working set for adaptive non-unity build (F:\Uni\FindingHooman-Unreal).
+  Creating makefile for FindingHoomanEditor (config setting changed)
+  Parsing headers for FindingHoomanEditor
+    Running UnrealHeaderTool "F:\Uni\FindingHooman-Unreal\FindingHooman\FindingHooman.uproject" "F:\Uni\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHoomanEditor\Development\FindingHoomanEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Nessie\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for FindingHoomanEditor in 4.5372956 seconds
+  Building FindingHoomanEditor...
+  Using Visual Studio 2019 14.29.30142 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 37 actions with 12 processes...
+    [1/37] Default.rc2
+    [2/37] SharedPCH.Engine.ShadowErrors.cpp
+    [3/37] BarkInterface.cpp
+    [4/37] InteractInterface.cpp
+    [5/37] SquirrelActor.cpp
+    [6/37] BirbActor.cpp
+    [7/37] SquirrelManager.gen.cpp
+    [8/37] FindingHoomanGameMode.cpp
+    [9/37] FindingHoomanCharacter.gen.cpp
+    [10/37] FindingHooman.init.gen.cpp
+    [11/37] FindingHooman.cpp
+    [12/37] FindingHoomanGameModeBase.cpp
+    [13/37] BarkInterface.gen.cpp
+    [14/37] Acorn.gen.cpp
+    [15/37] BirbActor.gen.cpp
+    [16/37] UnlockBark.cpp
+    [17/37] MiniGame.gen.cpp
+    [18/37] UnlockOpen.gen.cpp
+    [19/37] UnlockDig.gen.cpp
+    [20/37] FindingHoomanGameMode.gen.cpp
+    [21/37] FindingHoomanGameModeBase.gen.cpp
+    [22/37] Acorn.cpp
+    [23/37] SquirrelActor.gen.cpp
+    [24/37] SquirrelManager.cpp
+    [25/37] InteractInterface.gen.cpp
+    [26/37] MiniGame.cpp
+    [27/37] FindingHoomanCharacter.cpp
+    [28/37] UnlockDig.cpp
+    [29/37] Doge.gen.cpp
+    [30/37] UnlockBark.gen.cpp
+    [31/37] UnlockPush.gen.cpp
+    [32/37] UnlockOpen.cpp
+    [33/37] Doge.cpp
+    [34/37] UnlockPush.cpp
+    [35/37] UE4Editor-FindingHooman.lib
+       Creating library F:\Uni\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman.lib and object F:\Uni\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman.exp
+    [36/37] UE4Editor-FindingHooman.dll
+       Creating library F:\Uni\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman.suppressed.lib and object F:\Uni\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\UE4Editor-FindingHooman.suppressed.exp
+    [37/37] FindingHoomanEditor.target
+  Total time in Parallel executor: 68.28 seconds
+  Total execution time: 79.50 seconds
