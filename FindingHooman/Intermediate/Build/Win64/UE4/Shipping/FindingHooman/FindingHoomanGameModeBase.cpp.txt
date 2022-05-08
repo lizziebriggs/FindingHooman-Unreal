@@ -1,7 +1,7 @@
-D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h
-D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\FindingHoomanGameModeBase.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Source\FindingHooman\FindingHoomanGameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\GameModeBase.generated.h
-D:\Uni\FinalYear\GameDev\Term2\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\FindingHoomanGameModeBase.generated.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\FindingHoomanGameModeBase.generated.h
