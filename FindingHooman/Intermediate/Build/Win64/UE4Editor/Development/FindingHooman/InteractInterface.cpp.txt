@@ -1,3 +1,3 @@
-D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\Definitions.FindingHooman.h
-D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/Interfaces/InteractInterface.h
-D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\InteractInterface.generated.h
+D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Development\FindingHooman\Definitions.FindingHooman.h
+D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/Interfaces/InteractInterface.h
+D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4Editor\Inc\FindingHooman\InteractInterface.generated.h
