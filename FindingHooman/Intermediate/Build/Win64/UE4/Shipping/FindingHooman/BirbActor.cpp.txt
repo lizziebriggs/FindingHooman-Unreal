@@ -1,7 +1,7 @@
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/NPCs/BirbActor.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Source\FindingHooman/NPCs/BirbActor.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\ShapeComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\SphereComponent.generated.h
-D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\BirbActor.generated.h
+D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\BirbActor.generated.h

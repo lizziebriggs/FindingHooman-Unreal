@@ -117,8 +117,8 @@
 /I Developer\TargetPlatform\Public
 /I ..\Intermediate\Build\Win64\UE4\Inc\AnimationCore
 /I Runtime\AnimationCore\Public
-/I "D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman"
-/I "D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Source"
+/I "D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman"
+/I "D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Source"
 /I ..\Intermediate\Build\Win64\UE4\Inc\HeadMountedDisplay
 /I Runtime\HeadMountedDisplay\Public
 /I ..\Intermediate\Build\Win64\UE4\Inc\AugmentedReality
@@ -166,12 +166,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\SquirrelActor.gen.cpp"
-/FI"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h"
-/Fo"D:\Year 3\Term 1\COMP_1288\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\SquirrelActor.gen.cpp.obj"
+/FI"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\FindingHooman\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Inc\FindingHooman\SquirrelActor.gen.cpp"
+/FI"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\Definitions.FindingHooman.h"
+/Fo"D:\Uni\FinalYear\GameDev\Term2\NEW CLONE\FindingHooman-Unreal\FindingHooman\Intermediate\Build\Win64\UE4\Shipping\FindingHooman\SquirrelActor.gen.cpp.obj"
 /TP
 /GR-
 /W4
