@@ -34,8 +34,7 @@
 		{
 			"ShaderMapHash": "1DE5B3C3078204FBD8C2559DA141189D5E37777E",
 			"Assets": [
-				"/Engine/EngineMaterials/RemoveSurfaceMaterial",
-				"/Game/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master"
+				"/Engine/EngineMaterials/RemoveSurfaceMaterial"
 			]
 		},
 		{
@@ -44,9 +43,7 @@
 				"/OculusVR/Materials/TouchForQuestRiftSControllerMaterial",
 				"/Game/Resources/Models/Collectables/Material_008",
 				"/Game/Resources/Models/Hot_Dog_Stand_texture_Mat",
-				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/pendant_Material",
-				"/Game/Resources/Materials/Enviroment/CoolerTexture_Mat",
-				"/Game/Resources/Materials/Enviroment/CarboardTexture_Mat"
+				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/pendant_Material"
 			]
 		},
 		{
@@ -294,16 +291,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
+			"ShaderMapHash": "897422F2601DFEEA6C48B5D173FB8636677D5F0A",
 			"Assets": [
-				"/Game/StarterContent/Materials/M_Basic_Wall",
-				"/Game/Resources/Materials/Enviroment/Decoration/Colour_Materials/M_Base_Colour_001"
-			]
-		},
-		{
-			"ShaderMapHash": "24AA5D18E43E6B33CDF010B8254DB34A377C7A79",
-			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Interactive_Grass/Materials/Grass_M_001"
+				"/Game/Resources/Models/Pigeon/Pigeon_Mat"
 			]
 		},
 		{
@@ -319,9 +309,10 @@
 			]
 		},
 		{
-			"ShaderMapHash": "654DCFE485423A411E123F7DDDBF2AFBA838AC59",
+			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
 			"Assets": [
-				"/Game/UI/RenderTargets/ShibaUI_RT_Mat"
+				"/Game/Resources/Materials/Enviroment/Decoration/Colour_Materials/M_Base_Colour_001",
+				"/Game/StarterContent/Materials/M_Basic_Wall"
 			]
 		},
 		{
@@ -333,77 +324,27 @@
 		{
 			"ShaderMapHash": "8FD4AB7FDC0BC3C837929677393195B7422CE32B",
 			"Assets": [
-				"/Game/Resources/DogAlt/DogFinalModal",
 				"/Game/Resources/Models/Collectables/Material_004",
 				"/Game/Resources/Models/Collectables/Material_003",
+				"/Game/Resources/DogAlt/DogFinalModal",
 				"/Game/Resources/Models/NewModels/Default_OBJ",
-				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/Material",
-				"/Game/Resources/Models/NewModels/PM3D_Sphere3D1",
-				"/Game/Resources/Models/NewModels/DogFinalModal",
-				"/Game/Resources/Models/DogFinalModal2",
-				"/Game/Resources/Models/NewModels/DogFinalModal_001",
 				"/Game/Resources/Animations/BoldMan/Material_059",
+				"/Game/Resources/Materials/Enviroment/Decoration/Pearl_Necklace_Glow/Material",
+				"/Game/Resources/Models/NewModels/DogFinalModal_001",
+				"/Game/Resources/Models/DogFinalModal2",
+				"/Game/Resources/Models/NewModels/DogFinalModal",
+				"/Game/Resources/Models/NewModels/PM3D_Sphere3D1",
 				"/Game/Resources/Models/PM3D_Sphere3D1",
 				"/Game/Resources/Models/DogFinalModal_001",
-				"/Game/Resources/Models/DogFinalModal3",
-				"/Game/Resources/Animations/OldMan/Material_062",
-				"/Game/Resources/Animations/OldMan/Material_061",
-				"/Game/Resources/Animations/OldMan/Material_060",
-				"/Game/Resources/Animations/OldMan/Material_059",
-				"/Game/Resources/Animations/OldMan/Material_058",
-				"/Game/Resources/Animations/OldMan/Material_057",
-				"/Game/Resources/Animations/OldMan/Material_056",
-				"/Game/Resources/Animations/LadySmall/Material_048",
-				"/Game/Resources/Animations/LadySmall/Material_047",
-				"/Game/Resources/Animations/LadySmall/Material_046",
-				"/Game/Resources/Animations/LadySmall/Material_045",
-				"/Game/Resources/Animations/LadySmall/Material_044",
-				"/Game/Resources/Animations/LadySmall/Material_043",
-				"/Game/Resources/Animations/LadySmall/Material_042",
-				"/Game/Resources/Animations/LadySmall/Material_041",
-				"/Game/Resources/Animations/GirlCap/Material_023",
-				"/Game/Resources/Animations/GirlCap/Material_022",
-				"/Game/Resources/Animations/GirlCap/Material_021",
-				"/Game/Resources/Animations/GirlCap/Material_020",
-				"/Game/Resources/Animations/GirlCap/Material_019",
-				"/Game/Resources/Animations/GirlCap/Material_018",
-				"/Game/Resources/Animations/GirlCap/Material_017",
-				"/Game/Resources/Animations/GirlCap/Material_016",
-				"/Game/Resources/Animations/GilrBun/Material_007",
-				"/Game/Resources/Animations/GilrBun/Material_006",
-				"/Game/Resources/Animations/GilrBun/Material_005",
-				"/Game/Resources/Animations/GilrBun/Material_004",
-				"/Game/Resources/Animations/GilrBun/Material_003",
-				"/Game/Resources/Animations/GilrBun/Material_002",
-				"/Game/Resources/Animations/GilrBun/Material_001",
-				"/Game/Resources/Animations/GilrBun/Material",
-				"/Game/Resources/Animations/BoyClasses/Material_040",
-				"/Game/Resources/Animations/BoyClasses/Material_039",
-				"/Game/Resources/Animations/BoyClasses/Material_038",
-				"/Game/Resources/Animations/BoyClasses/Material_037",
-				"/Game/Resources/Animations/BoyClasses/Material_036",
-				"/Game/Resources/Animations/BoyClasses/Material_035",
-				"/Game/Resources/Animations/BoyClasses/Material_034",
-				"/Game/Resources/Animations/BoyClasses/Material_033",
-				"/Game/Resources/Animations/BoyCap/Material_055",
-				"/Game/Resources/Animations/BoyCap/Material_054",
-				"/Game/Resources/Animations/BoyCap/Material_053",
-				"/Game/Resources/Animations/BoyCap/Material_052",
-				"/Game/Resources/Animations/BoyCap/Material_051",
-				"/Game/Resources/Animations/BoyCap/Material_050",
-				"/Game/Resources/Animations/BoyCap/Material_049",
-				"/Game/Resources/Animations/BoldMan/Material_062",
-				"/Game/Resources/Animations/BoldMan/Material_061",
-				"/Game/Resources/Animations/BoldMan/Material_060",
-				"/Game/Resources/Animations/BoldMan/Material_058"
+				"/Game/Resources/Models/DogFinalModal3"
 			]
 		},
 		{
 			"ShaderMapHash": "95B3910418E5A65D86619C05D1BD7126CDFA9D68",
 			"Assets": [
 				"/Game/Resources/Models/Collectables/Material_001",
-				"/Game/Resources/Models/Husky/HuskyUV_DogFinalModal_BaseColor_1001_Mat",
-				"/Game/Resources/Materials/Characters/Poodle"
+				"/Game/Resources/Materials/Characters/Poodle",
+				"/Game/Resources/Models/Husky/HuskyUV_DogFinalModal_BaseColor_1001_Mat"
 			]
 		},
 		{
@@ -413,18 +354,21 @@
 			]
 		},
 		{
-			"ShaderMapHash": "F81BE41AEAC2E7AF04C1226FC3C871252EF81F50",
+			"ShaderMapHash": "654DCFE485423A411E123F7DDDBF2AFBA838AC59",
 			"Assets": [
-				"/Game/Resources/Materials/Screen_Distortion/Drunk_Distortion/PP_Distortion_M_002"
+				"/Game/UI/RenderTargets/ShibaUI_RT_Mat"
 			]
 		},
 		{
-			"ShaderMapHash": "91B79B57C0D706C0842CFFB2CE5604C5EBAAEB58",
+			"ShaderMapHash": "24AA5D18E43E6B33CDF010B8254DB34A377C7A79",
 			"Assets": [
-				"/Game/Resources/Animations/FlipBooks/InGame/GateOpen_Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/Bark_Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/Bin_Push__1__Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/Dig_Mat"
+				"/Game/Resources/Materials/Enviroment/Interactive_Grass/Materials/Grass_M_001"
+			]
+		},
+		{
+			"ShaderMapHash": "F81BE41AEAC2E7AF04C1226FC3C871252EF81F50",
+			"Assets": [
+				"/Game/Resources/Materials/Screen_Distortion/Drunk_Distortion/PP_Distortion_M_002"
 			]
 		},
 		{
@@ -434,16 +378,19 @@
 			]
 		},
 		{
-			"ShaderMapHash": "897422F2601DFEEA6C48B5D173FB8636677D5F0A",
+			"ShaderMapHash": "91B79B57C0D706C0842CFFB2CE5604C5EBAAEB58",
 			"Assets": [
-				"/Game/Resources/Models/Pigeon/Pigeon_Mat"
+				"/Game/Resources/Animations/FlipBooks/InGame/GateOpen_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Dig_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Bark_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Bin_Push__1__Mat"
 			]
 		},
 		{
 			"ShaderMapHash": "FD209B9BBD91B364CA47FEBC02DC31113A5BB337",
 			"Assets": [
-				"/Game/Resources/Animations/FlipBooks/MainMenu/Squish_FlipBookMaterial",
-				"/Game/Resources/Animations/FlipBooks/MainMenu/Blink_FlipBookMaterial"
+				"/Game/Resources/Animations/FlipBooks/MainMenu/Blink_FlipBookMaterial",
+				"/Game/Resources/Animations/FlipBooks/MainMenu/Squish_FlipBookMaterial"
 			]
 		},
 		{
@@ -459,432 +406,17 @@
 			]
 		},
 		{
-			"ShaderMapHash": "801695B573595E0ABB3374666E6BFAA38A923B67",
+			"ShaderMapHash": "E68AFE93E4EB3617A55E80B59EA735255714AB95",
 			"Assets": [
-				"/Game/ThirdPerson/Meshes/RampMaterial"
+				"/Game/Resources/Models/Collectables/TreeNarrow_Texture",
+				"/Game/Resources/Materials/Enviroment/TrunkWide/WideTrunk",
+				"/Game/Resources/Materials/Enviroment/Stump/StumpMat"
 			]
 		},
 		{
-			"ShaderMapHash": "BE009093AFED865BC4E39A6002509DDDDF832735",
+			"ShaderMapHash": "4125B0F4FFDE11FAC435B15C53B7F4F6C8F9C456",
 			"Assets": [
-				"/Game/Geometry/Meshes/CubeMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "C380564A6414222F6A7E5F57D0F14982D5FD4F14",
-			"Assets": [
-				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
-			]
-		},
-		{
-			"ShaderMapHash": "F0FA02A67FBBCF715E35F0F2A4FFD15364BB3086",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Frame"
-			]
-		},
-		{
-			"ShaderMapHash": "72DB7E5A6B6B725CBECAD78E7FB2CF2F8EADC9A6",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Glass"
-			]
-		},
-		{
-			"ShaderMapHash": "D7497840AC137E8C8AAC0D731C7CCB3ADD279DB2",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Dust_Particle"
-			]
-		},
-		{
-			"ShaderMapHash": "4824F604A30BC5219EF292894E6D5B0B1C2A7380",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Wood_Walnut"
-			]
-		},
-		{
-			"ShaderMapHash": "3B23D7BA68647DF0DD1CB3A63FA8D22B900CE602",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Wood_Pine"
-			]
-		},
-		{
-			"ShaderMapHash": "3E58ADAE4C06CCC672ECE98A6BA8E0A8BCDBBB69",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Wood_Oak"
-			]
-		},
-		{
-			"ShaderMapHash": "988096A1539C5A5F39CF1958345652A3F759D375",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Wood_Floor_Walnut_Worn"
-			]
-		},
-		{
-			"ShaderMapHash": "7293F4B212935DCC0A57547B03C953D24AE814D5",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Wood_Floor_Walnut_Polished"
-			]
-		},
-		{
-			"ShaderMapHash": "888FA0F09A6717FBC98CAEA29DA8E745A869D8EE",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Water_Ocean"
-			]
-		},
-		{
-			"ShaderMapHash": "B9FC330B84198BA79D67AD1358AFFACA8C3FD7EB",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Water_Lake"
-			]
-		},
-		{
-			"ShaderMapHash": "C24FE033C05120AF73E349FD63A2638164A53D4C",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Tech_Panel"
-			]
-		},
-		{
-			"ShaderMapHash": "3712AA3719AC40F15F0B6201641EDA31DF0299FC",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Tech_Hex_Tile_Pulse"
-			]
-		},
-		{
-			"ShaderMapHash": "CA53281C24BF05C15884E42781EE472783EA3D23",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Tech_Hex_Tile"
-			]
-		},
-		{
-			"ShaderMapHash": "C18B0705EDD0E0EC7867E99442036D241A1B5054",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Tech_Checker_Dot"
-			]
-		},
-		{
-			"ShaderMapHash": "D84EAA355BD6EA7CA37A421A0E89C35DADD656C9",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Rock_Slate"
-			]
-		},
-		{
-			"ShaderMapHash": "3536604E0C86AD97F1445377CBA5222E0BD519F5",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Rock_Sandstone"
-			]
-		},
-		{
-			"ShaderMapHash": "1C5341AA65E618F58BACDDD914ED88400BF3C356",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Rock_Marble_Polished"
-			]
-		},
-		{
-			"ShaderMapHash": "A34E9513E1507B85D1D30BAC49FB511AF7B3F1BF",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Rock_Basalt"
-			]
-		},
-		{
-			"ShaderMapHash": "2662B834334F1595D47E66B5DAABFDCC1F91834D",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Steel"
-			]
-		},
-		{
-			"ShaderMapHash": "A06660B213E4EFB006A2D10E98139621BF23554F",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Chrome"
-			]
-		},
-		{
-			"ShaderMapHash": "64EF441563B4E2652896675A9341549B2DB88E26",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Ground_Gravel"
-			]
-		},
-		{
-			"ShaderMapHash": "485725C82E671F793EADB7FCBDC3AAF92C509141",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Ground_Grass"
-			]
-		},
-		{
-			"ShaderMapHash": "848A095CBE87B1E6B661EA3518348DA9C6DF4A64",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Concrete_Tiles"
-			]
-		},
-		{
-			"ShaderMapHash": "A7F6ADE573DFB03C2EC79714CBE64F86A8AD2E53",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Concrete_Panels"
-			]
-		},
-		{
-			"ShaderMapHash": "5FFD26758DDB5C02FE521CB7DC1BC4DD1900DFAD",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_CobbleStone_Smooth"
-			]
-		},
-		{
-			"ShaderMapHash": "192F650EEF30F58A8E64686C37FCC6D3B0EB6741",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_CobbleStone_Rough"
-			]
-		},
-		{
-			"ShaderMapHash": "05079645DDCF124612D45FD5B0886A99280BAD81",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_CobbleStone_Pebble"
-			]
-		},
-		{
-			"ShaderMapHash": "83805D518E3F66AFBE011BE09A6674C65A8DF4F3",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Ceramic_Tile_Checker"
-			]
-		},
-		{
-			"ShaderMapHash": "CE546EFAB8F791D26B9314F9FEEABA379CCCABA9",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Hewn_Stone"
-			]
-		},
-		{
-			"ShaderMapHash": "E278A89516B616AFDCD4CE707E3C2C33A854F2B7",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Cut_Stone"
-			]
-		},
-		{
-			"ShaderMapHash": "000FA9ABDD5BCFDE0E7B827F20D206074D2A1819",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Clay_Old"
-			]
-		},
-		{
-			"ShaderMapHash": "E280CADBB1F905A427BA1FA696C45EBB5E56238F",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Clay_New"
-			]
-		},
-		{
-			"ShaderMapHash": "EE5C779A86755473406ED05E9E7490306F8F5F67",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Brick_Clay_Beveled"
-			]
-		},
-		{
-			"ShaderMapHash": "00ACD0B43BEB9AE01C373EBB8D2FFA362E9E34ED",
-			"Assets": [
-				"/Engine/EngineMaterials/AntiAliasedTextMaterialTranslucent"
-			]
-		},
-		{
-			"ShaderMapHash": "D759BD80381B59F9597345BC0B20E373FF0EA3D0",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Concrete_Poured"
-			]
-		},
-		{
-			"ShaderMapHash": "7E399F23D721F54A0D97D123548387ACA5389207",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_TableRound"
-			]
-		},
-		{
-			"ShaderMapHash": "E5A2A38F8DE5EBC5BFE0666AB88236957704957F",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Statue"
-			]
-		},
-		{
-			"ShaderMapHash": "64053DD20DD55BBB893B8CFCDF467A2FE0702D59",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_StatueGlass"
-			]
-		},
-		{
-			"ShaderMapHash": "A9223EF722A1976F02E4844188B2E458A701146B",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Chair"
-			]
-		},
-		{
-			"ShaderMapHash": "2E8420907651514121F81FBBC05B805804ECB455",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Copper"
-			]
-		},
-		{
-			"ShaderMapHash": "2E03A16FC9B8D6F43D7EE3677CA7C5683BC7CFD9",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Burnished_Steel"
-			]
-		},
-		{
-			"ShaderMapHash": "C2F3D6DA7DD6D5C19039244238EBE580DD484B3D",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Brushed_Nickel"
-			]
-		},
-		{
-			"ShaderMapHash": "4808F2C13D119176F2E8C48220A0C41C36814F04",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Lamp"
-			]
-		},
-		{
-			"ShaderMapHash": "73675733B6C9FB625BD19471C448920CFCC717FE",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_smoke_subUV"
-			]
-		},
-		{
-			"ShaderMapHash": "E728275E86305BFF6DC77C8B1CF973DB1FB3C6C7",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Spark"
-			]
-		},
-		{
-			"ShaderMapHash": "63A9735EC59888BB0450B7AA8E6442E676766299",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Radial_Gradient"
-			]
-		},
-		{
-			"ShaderMapHash": "13B9C1BFAE87A304BD7E1C7C6112EEF4A5AA66A5",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Heat_Distortion"
-			]
-		},
-		{
-			"ShaderMapHash": "DB4A6E58D03435E971AEBB01A0B5F65BA94DCCD5",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Fire_SubUV"
-			]
-		},
-		{
-			"ShaderMapHash": "F66FC83168E3609D05D512B3BC2E29DE9767506D",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Basic_Floor"
-			]
-		},
-		{
-			"ShaderMapHash": "4C677C082F3DCF98507A60C0927AC77006E2DA72",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Rust"
-			]
-		},
-		{
-			"ShaderMapHash": "403BE01FED35672468C59021EDD516BBF0154AC5",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Concrete_Grime"
-			]
-		},
-		{
-			"ShaderMapHash": "EDA7A6D577EB0133614EB81AE0881C3D66CE5B54",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Metal_Gold"
-			]
-		},
-		{
-			"ShaderMapHash": "404BCC74169AB1E5D79193B91B9B8C7EAA05CB3B",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Ground_Moss"
-			]
-		},
-		{
-			"ShaderMapHash": "AC50A361793F211DA25EF5F9C6DCE6EBCBF32171",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_GreyBall"
-			]
-		},
-		{
-			"ShaderMapHash": "FBE6507D74A90CAF1D9703878E705BBEE6857E3C",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_ColorGrid",
-				"/Game/StarterContent/Materials/M_ColorGrid_LowSpec"
-			]
-		},
-		{
-			"ShaderMapHash": "12A4CD629A96EC736B1DCD9D15D13675DC93FDE4",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_ClearCoatBlack"
-			]
-		},
-		{
-			"ShaderMapHash": "7DCD77054A53363F7D91F653DCC448DFB99D8FE2",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_ClearCoat"
-			]
-		},
-		{
-			"ShaderMapHash": "A165473EE0B6F49CBE44CF9DCD8C65DD55ED9812",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_ChromeBall"
-			]
-		},
-		{
-			"ShaderMapHash": "7875DE8D2E60F0FEC44D3EF441472166EBC11041",
-			"Assets": [
-				"/Game/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI"
-			]
-		},
-		{
-			"ShaderMapHash": "BEC82E0E9F7F980E52C66AC59BE225CB3ED0EE9A",
-			"Assets": [
-				"/Game/StarterContent/Blueprints/Assets/M_LightStage_Arrows"
-			]
-		},
-		{
-			"ShaderMapHash": "F54906C80055D636BC39802D22A7721B7F62D200",
-			"Assets": [
-				"/Engine/EditorMaterials/Thumbnails/SkySphereMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "CBE1B9A36802EF5FE309B1F94BBC5001044B3DF3",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_AssetPlatform"
-			]
-		},
-		{
-			"ShaderMapHash": "AF630D10EC29E174CC6981011633B94F1A86668B",
-			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Tree",
-				"/Game/Resources/Models/Enviroment/PillarMaterial_001",
-				"/Game/Resources/Textures/windows4_Mat",
-				"/Game/Resources/Textures/windows2_Mat",
-				"/Game/Resources/Textures/windows1_Mat",
-				"/Game/Resources/Models/Collectables/TreeLarge_Texture_2",
-				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/Wallet_material"
-			]
-		},
-		{
-			"ShaderMapHash": "7B20BCE2B25A2E15B7E5DFE0C2094DF133BDE246",
-			"Assets": [
-				"/Game/Resources/Materials/Base",
-				"/Game/Resources/Models/Material_002"
-			]
-		},
-		{
-			"ShaderMapHash": "4492AC5DD3E3CD570B40AA7AC29AB6CE286A2B18",
-			"Assets": [
-				"/Niagara/DefaultAssets/DefaultRIbbonMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "B3F8797D75EDF90FFEA8BCCDC67B2DE9670554F5",
-			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Water/M_Water_Main_001"
-			]
-		},
-		{
-			"ShaderMapHash": "DDC76D3373D2C8A9C3F888F4F22BED281006D474",
-			"Assets": [
-				"/Game/Materials/Cel_Shader/PP_Outline_M_001",
-				"/Game/Resources/Materials/Cel_Shader/Outline/PP_Outline_M_001"
+				"/Game/Resources/Materials/Base"
 			]
 		},
 		{
@@ -894,36 +426,16 @@
 			]
 		},
 		{
-			"ShaderMapHash": "F42CD61A46463FF22E0C7C5DADBB605ED4CE201A",
+			"ShaderMapHash": "AF630D10EC29E174CC6981011633B94F1A86668B",
 			"Assets": [
-				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "0C3679EC7FD445B3A0F1A4F914A83775CDB09AA9",
-			"Assets": [
-				"/Game/Resources/VFX/Bin_Smell/Bin_Smell_M_001"
-			]
-		},
-		{
-			"ShaderMapHash": "DA5A8CD4711E234115C23DDCA231275D77B39334",
-			"Assets": [
-				"/Game/Resources/Materials/Outline_Interaction/M_Texture_Outline_001"
-			]
-		},
-		{
-			"ShaderMapHash": "56131BFC26F3B0FC059440F592ED35BF08398004",
-			"Assets": [
-				"/Game/Movies/SquirrelMediaPlayer_Video_Mat",
-				"/Game/Movies/Intro-Material"
-			]
-		},
-		{
-			"ShaderMapHash": "E68AFE93E4EB3617A55E80B59EA735255714AB95",
-			"Assets": [
-				"/Game/Resources/Models/Collectables/TreeNarrow_Texture",
-				"/Game/Resources/Materials/Enviroment/TrunkWide/WideTrunk",
-				"/Game/Resources/Materials/Enviroment/Stump/StumpMat"
+				"/Game/Resources/Models/Enviroment/PillarMaterial_001",
+				"/Game/Resources/Textures/windows4_Mat",
+				"/Game/Resources/Textures/windows2_Mat",
+				"/Game/Resources/Textures/windows1_Mat",
+				"/Game/Resources/Models/Collectables/TreeLarge_Texture_2",
+				"/Game/Resources/Materials/Enviroment/CoolerTexture_Mat",
+				"/Game/Resources/Materials/Enviroment/CarboardTexture_Mat",
+				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/Wallet_material"
 			]
 		},
 		{
@@ -945,9 +457,21 @@
 			]
 		},
 		{
+			"ShaderMapHash": "7B20BCE2B25A2E15B7E5DFE0C2094DF133BDE246",
+			"Assets": [
+				"/Game/Resources/Models/Material_002"
+			]
+		},
+		{
 			"ShaderMapHash": "75EB9CBA275754BCC44931F1C9BB650661CE34F1",
 			"Assets": [
 				"/Game/Resources/Materials/Enviroment/New_Water/Materials/M_Combined_Water_001"
+			]
+		},
+		{
+			"ShaderMapHash": "0C3679EC7FD445B3A0F1A4F914A83775CDB09AA9",
+			"Assets": [
+				"/Game/Resources/VFX/Bin_Smell/Bin_Smell_M_001"
 			]
 		},
 		{
@@ -957,9 +481,22 @@
 			]
 		},
 		{
+			"ShaderMapHash": "DA5A8CD4711E234115C23DDCA231275D77B39334",
+			"Assets": [
+				"/Game/Resources/Materials/Outline_Interaction/M_Texture_Outline_001"
+			]
+		},
+		{
 			"ShaderMapHash": "27BEFFC4AFFDF4D8DB77A4968F45CF21740294E5",
 			"Assets": [
 				"/Game/Resources/Materials/Cel_Shader/PP_Cel_Shader"
+			]
+		},
+		{
+			"ShaderMapHash": "DDC76D3373D2C8A9C3F888F4F22BED281006D474",
+			"Assets": [
+				"/Game/Resources/Materials/Cel_Shader/Outline/PP_Outline_M_001",
+				"/Game/Materials/Cel_Shader/PP_Outline_M_001"
 			]
 		},
 		{
@@ -982,93 +519,27 @@
 			]
 		},
 		{
-			"ShaderMapHash": "0DD14F2C5B19F182C3DDD0ECD939EE128CD8A430",
+			"ShaderMapHash": "F42CD61A46463FF22E0C7C5DADBB605ED4CE201A",
 			"Assets": [
-				"/Game/Maps/MainLevel_Map"
+				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
 			]
 		},
 		{
-			"ShaderMapHash": "D6823C4130A30CD3FD0B281527DAD132F0CA9467",
+			"ShaderMapHash": "56131BFC26F3B0FC059440F592ED35BF08398004",
 			"Assets": [
-				"/Game/Maps/MainLevel_Map"
+				"/Game/Movies/Intro-Material"
 			]
 		},
 		{
-			"ShaderMapHash": "4D2A3811AF095D91460E737EF182CBA97E6E0942",
+			"ShaderMapHash": "63A9735EC59888BB0450B7AA8E6442E676766299",
 			"Assets": [
-				"/Game/Maps/MainLevel_Map"
+				"/Game/StarterContent/Particles/M_Radial_Gradient"
 			]
 		},
 		{
-			"ShaderMapHash": "49109226590B9B32D3673D17E49355C63315D21F",
+			"ShaderMapHash": "4492AC5DD3E3CD570B40AA7AC29AB6CE286A2B18",
 			"Assets": [
-				"/Game/Maps/MainLevel_Map"
-			]
-		},
-		{
-			"ShaderMapHash": "8D5C9971654E22D92212E61C55D92EEA6D6F673A",
-			"Assets": [
-				"/Engine/BasicShapes/BasicShapeMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "4098AA338AFA5ED1E5C080E07ECBB65B5576EC27",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Shelf"
-			]
-		},
-		{
-			"ShaderMapHash": "0C8640007F68F568FB0B7D36A50085965B53F819",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Rock"
-			]
-		},
-		{
-			"ShaderMapHash": "D350804326C7235317B41F7417B108D51B8081B4",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_MaterialSphere_Plain"
-			]
-		},
-		{
-			"ShaderMapHash": "BF92B7BC41D29173E343A98248B5D6704727787C",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_MaterialSphere"
-			]
-		},
-		{
-			"ShaderMapHash": "6C80021D77B7FBE5BA85056BEC9D641E61C28711",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Door"
-			]
-		},
-		{
-			"ShaderMapHash": "0229ADA9A973090D936E93410D724337EE4AD624",
-			"Assets": [
-				"/Game/StarterContent/Props/Materials/M_Bush"
-			]
-		},
-		{
-			"ShaderMapHash": "5FB583605FAD51777093E020EDE159CC4A7441AB",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_radial_ramp"
-			]
-		},
-		{
-			"ShaderMapHash": "ED6C71D937C4B2CCCF8484A39273C969BB5F7AD7",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/m_flare_01"
-			]
-		},
-		{
-			"ShaderMapHash": "237E51E494F39D873FE8943B0EB946EBD32B5619",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_explosion_subUV"
-			]
-		},
-		{
-			"ShaderMapHash": "039A91F25D4D3C75E91D1CFBA4AFA4EC135038A6",
-			"Assets": [
-				"/Game/StarterContent/Particles/Materials/M_Burst"
+				"/Niagara/DefaultAssets/DefaultRIbbonMaterial"
 			]
 		},
 		{
@@ -1105,6 +576,36 @@
 			"ShaderMapHash": "697D4210EAB870359935729275473BBAF8992563",
 			"Assets": [
 				"/Game/Resources/Materials/Material_MiniMap"
+			]
+		},
+		{
+			"ShaderMapHash": "BE009093AFED865BC4E39A6002509DDDDF832735",
+			"Assets": [
+				"/Game/Geometry/Meshes/CubeMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "0DD14F2C5B19F182C3DDD0ECD939EE128CD8A430",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "D6823C4130A30CD3FD0B281527DAD132F0CA9467",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "4D2A3811AF095D91460E737EF182CBA97E6E0942",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
+			]
+		},
+		{
+			"ShaderMapHash": "49109226590B9B32D3673D17E49355C63315D21F",
+			"Assets": [
+				"/Game/Maps/MainLevel_Map"
 			]
 		}
 	]
