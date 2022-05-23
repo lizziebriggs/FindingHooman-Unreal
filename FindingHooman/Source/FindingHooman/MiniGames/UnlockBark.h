@@ -22,7 +22,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
 		float goalTime;
 
-	int birbsInAir;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
+		int birbsInAir;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MiniGameSettings)
 		bool infinite;

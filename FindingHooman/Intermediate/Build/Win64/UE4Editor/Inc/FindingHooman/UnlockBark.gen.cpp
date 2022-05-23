@@ -42,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeUnlockBark() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_goalTime;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_birbsInAir_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_birbsInAir;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_infinite_MetaData[];
 #endif
 		static void NewProp_infinite_SetBit(void* Obj);
@@ -76,6 +80,13 @@ void EmptyLinkFunctionForGeneratedCodeUnlockBark() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUnlockBark_Statics::NewProp_goalTime = { "goalTime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockBark, goalTime), METADATA_PARAMS(Z_Construct_UClass_AUnlockBark_Statics::NewProp_goalTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockBark_Statics::NewProp_goalTime_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbsInAir_MetaData[] = {
+		{ "Category", "MiniGameSettings" },
+		{ "ModuleRelativePath", "MiniGames/UnlockBark.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbsInAir = { "birbsInAir", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUnlockBark, birbsInAir), METADATA_PARAMS(Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbsInAir_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbsInAir_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnlockBark_Statics::NewProp_infinite_MetaData[] = {
 		{ "Category", "MiniGameSettings" },
 		{ "ModuleRelativePath", "MiniGames/UnlockBark.h" },
@@ -90,6 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeUnlockBark() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbs_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbs,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockBark_Statics::NewProp_goalTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockBark_Statics::NewProp_birbsInAir,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnlockBark_Statics::NewProp_infinite,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUnlockBark_Statics::StaticCppClassTypeInfo = {
@@ -119,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeUnlockBark() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUnlockBark, 648639571);
+	IMPLEMENT_CLASS(AUnlockBark, 2903054238);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<AUnlockBark>()
 	{
 		return AUnlockBark::StaticClass();
