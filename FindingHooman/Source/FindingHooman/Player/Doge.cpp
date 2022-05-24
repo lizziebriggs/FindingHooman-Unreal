@@ -106,6 +106,8 @@ void ADoge::ZoomCamera(float Axis)
 
 void ADoge::TurnCamera(float Val)
 {
+	if (!canMoveCamera) return;
+
 	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
 	{
 		APlayerController* const PC = CastChecked<APlayerController>(Controller);
@@ -118,6 +120,8 @@ void ADoge::TurnCamera(float Val)
 
 void ADoge::LookUp(float Val)
 {
+	if (!canMoveCamera) return;
+
 	if (Val != 0.f && Controller && Controller->IsLocalPlayerController())
 	{
 		APlayerController* const PC = CastChecked<APlayerController>(Controller);
@@ -133,6 +137,8 @@ void ADoge::LookUp(float Val)
 
 void ADoge::MoveForward(float Axis)
 {
+	if (!canMove) return;
+
 	const FRotator Rotation = Controller->GetControlRotation();
 	const FRotator YawRotation(0, Rotation.Yaw, 0);
 
@@ -145,6 +151,8 @@ void ADoge::MoveForward(float Axis)
 
 void ADoge::MoveRight(float Axis)
 {
+	if (!canMove) return;
+
 	const FRotator Rotation = Controller->GetControlRotation();
 	const FRotator YawRotation(0, Rotation.Yaw, 0);
 
