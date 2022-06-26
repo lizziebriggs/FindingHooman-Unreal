@@ -291,9 +291,28 @@
 			]
 		},
 		{
-			"ShaderMapHash": "654DCFE485423A411E123F7DDDBF2AFBA838AC59",
+			"ShaderMapHash": "897422F2601DFEEA6C48B5D173FB8636677D5F0A",
 			"Assets": [
-				"/Game/UI/RenderTargets/ShibaUI_RT_Mat"
+				"/Game/Resources/Models/Pigeon/Pigeon_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "4B9E709EBD70DDA0B1E4F5A1A28C8CF86C15ED1B",
+			"Assets": [
+				"/Game/Resources/Materials/Outline_Interaction/M_Soild_Colour_Outline_001"
+			]
+		},
+		{
+			"ShaderMapHash": "650A3AE876EF4127A00B05058807B2010BD3FE0E",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/M_Texture_Base_001"
+			]
+		},
+		{
+			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
+			"Assets": [
+				"/Game/Resources/Materials/Enviroment/Decoration/Colour_Materials/M_Base_Colour_001",
+				"/Game/StarterContent/Materials/M_Basic_Wall"
 			]
 		},
 		{
@@ -335,37 +354,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "650A3AE876EF4127A00B05058807B2010BD3FE0E",
+			"ShaderMapHash": "654DCFE485423A411E123F7DDDBF2AFBA838AC59",
 			"Assets": [
-				"/Game/Resources/Materials/Enviroment/Decoration/Texture_Materials/M_Texture_Base_001"
-			]
-		},
-		{
-			"ShaderMapHash": "DF22970824430D8A3AD2C0266C312E0A6E0BC7A9",
-			"Assets": [
-				"/Game/StarterContent/Materials/M_Basic_Wall",
-				"/Game/Resources/Materials/Enviroment/Decoration/Colour_Materials/M_Base_Colour_001"
+				"/Game/UI/RenderTargets/ShibaUI_RT_Mat"
 			]
 		},
 		{
 			"ShaderMapHash": "24AA5D18E43E6B33CDF010B8254DB34A377C7A79",
 			"Assets": [
 				"/Game/Resources/Materials/Enviroment/Interactive_Grass/Materials/Grass_M_001"
-			]
-		},
-		{
-			"ShaderMapHash": "4B9E709EBD70DDA0B1E4F5A1A28C8CF86C15ED1B",
-			"Assets": [
-				"/Game/Resources/Materials/Outline_Interaction/M_Soild_Colour_Outline_001"
-			]
-		},
-		{
-			"ShaderMapHash": "91B79B57C0D706C0842CFFB2CE5604C5EBAAEB58",
-			"Assets": [
-				"/Game/Resources/Animations/FlipBooks/InGame/Bin_Push__1__Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/Dig_Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/GateOpen_Mat",
-				"/Game/Resources/Animations/FlipBooks/InGame/Bark_Mat"
 			]
 		},
 		{
@@ -381,9 +378,12 @@
 			]
 		},
 		{
-			"ShaderMapHash": "897422F2601DFEEA6C48B5D173FB8636677D5F0A",
+			"ShaderMapHash": "91B79B57C0D706C0842CFFB2CE5604C5EBAAEB58",
 			"Assets": [
-				"/Game/Resources/Models/Pigeon/Pigeon_Mat"
+				"/Game/Resources/Animations/FlipBooks/InGame/Bin_Push__1__Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/GateOpen_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Dig_Mat",
+				"/Game/Resources/Animations/FlipBooks/InGame/Bark_Mat"
 			]
 		},
 		{
