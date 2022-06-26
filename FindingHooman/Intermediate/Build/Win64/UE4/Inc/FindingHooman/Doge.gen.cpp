@@ -640,6 +640,16 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_normalRunSpeed;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canMove_MetaData[];
+#endif
+		static void NewProp_canMove_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canMove;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canMoveCamera_MetaData[];
+#endif
+		static void NewProp_canMoveCamera_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canMoveCamera;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TriggerBox_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TriggerBox;
@@ -839,6 +849,28 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed = { "normalRunSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoge, normalRunSpeed), METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_canMove_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_canMove_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->canMove = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_canMove = { "canMove", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_canMove_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_canMove_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_canMove_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Player/Doge.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera_SetBit(void* Obj)
+	{
+		((ADoge*)Obj)->canMoveCamera = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera = { "canMoveCamera", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoge), &Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoge_Statics::NewProp_TriggerBox_MetaData[] = {
 		{ "Category", "Interaction" },
 		{ "EditInline", "true" },
@@ -971,6 +1003,8 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_InvertMovementVert,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalWalkSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_normalRunSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_canMove,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_canMoveCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_TriggerBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_SkillRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoge_Statics::NewProp_currentSkill,
@@ -1012,7 +1046,7 @@ void EmptyLinkFunctionForGeneratedCodeDoge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoge, 478956828);
+	IMPLEMENT_CLASS(ADoge, 3010598358);
 	template<> FINDINGHOOMAN_API UClass* StaticClass<ADoge>()
 	{
 		return ADoge::StaticClass();
